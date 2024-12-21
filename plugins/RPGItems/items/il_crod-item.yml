@@ -1,0 +1,81 @@
+name: il:rod
+uid: -584564920
+author: 0d982a7c-c63d-4d65-a0ac-8651b3ad11e6
+note: ''
+license: All Right Reserved
+mcVersion: 1.21.3
+pluginSerial: 0
+haspermission: false
+permission: rpgitems.item.use.il:rod
+display: '&x&F&F&F&F&F&F&lV&x&F&A&F&8&E&3&la&x&F&6&F&1&C&6&lr&x&F&1&E&B&A&A&la &x&E&8&D&D&7&1&le&x&E&3&D&6&5&4&ln
+  &x&C&1&9&8&3&0&ll&x&A&F&8&2&2&A&ll&x&9&C&6&C&2&3&la&x&C&3&A&7&5&E&lm&x&E&A&E&2&9&8&la&x&E&E&A&7&2&0&ls'
+damageMin: 0
+damageMax: 0
+armour: 0
+armourExpression: ''
+playerArmourExpression: ''
+DamageType: ''
+attributemode: PARTIAL_UPDATE
+description: []
+item: BLAZE_ROD
+ignoreWorldGuard: false
+canBeOwned: false
+hasStackId: false
+item_data: 0
+components: {}
+powers:
+  '0':
+    powerName: rpgitems:command
+    powerId: command-0
+    cost: 0
+    display: Fireball
+    permission: ''
+    triggers: LEFT_CLICK
+    command: ignisb
+    requireHurtByEntity: true
+    cooldown: 220
+  '1':
+    powerName: rpgitems:fire
+    powerId: fire-0
+    cost: 0
+    distance: 6
+    burnduration: 60
+    displayName: fire
+    cooldown: 1600
+    triggers: RIGHT_CLICK
+  '2':
+    powerName: rpgitems:command
+    powerId: command-1
+    cost: 0
+    display: fireprotect
+    permission: ''
+    triggers: RIGHT_CLICK
+    command: ignisfp
+    requireHurtByEntity: true
+    cooldown: 1600
+conditions: {}
+markers: {}
+triggers: {}
+hitCost: 0
+hittingCost: 0
+blockBreakingCost: 0
+hitCostByDamage: false
+maxDurability: -1
+defaultDurability: -1
+durabilityLowerBound: 0
+durabilityUpperBound: 0
+hasDurabilityBar: false
+showPowerText: false
+showArmourLore: false
+damageMode: FIXED
+customModelData: 0
+enchantMode: DISALLOW
+itemFlags:
+- HIDE_ATTRIBUTES
+customItemModel: false
+barFormat: DEFAULT
+alwaysAllowMelee: false
+isTemplate: false
+type: BLAZE_ROD
+templates: {}
+templatePlaceholders: {}

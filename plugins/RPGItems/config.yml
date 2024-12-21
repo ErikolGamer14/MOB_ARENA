@@ -1,0 +1,46 @@
+language: en_US
+version: '1.1'
+general:
+  enabled_languages:
+  - en_US
+  - zh_CN
+  give_perms: false
+  item:
+    fs_lock: true
+    show_loaded: false
+    item_stack_uuid: true
+    show_cooldown_warning_to_actionbar: false
+command:
+  list:
+    item_per_page: 9
+    power_per_page: 5
+support:
+  MythicMobs:
+    enable: true
+  Residence:
+    enable: true
+  PlaceholderAPI:
+    enable: true
+  world_guard:
+    enable: true
+    force_refresh: false
+    disable_in_no_pvp: true
+    show_warning: true
+gist:
+  token: ''
+  publish: true
+item:
+  defaults:
+    numeric_bar: false
+    force_bar: false
+    license: All Right Reserved
+    enchant_mode: DISALLOW
+    allow_anvil_enchant: true
+  quality:
+    normal: §f
+    legendary: §e
+    rare: §b
+    epic: §3
+    trash: §7
+unused:
+  locale_inv: false

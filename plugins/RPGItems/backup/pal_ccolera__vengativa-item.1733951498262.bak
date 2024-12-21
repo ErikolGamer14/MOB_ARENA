@@ -1,0 +1,81 @@
+name: pal:colera_vengativa
+uid: -402941027
+author: 0d982a7c-c63d-4d65-a0ac-8651b3ad11e6
+license: All Right Reserved
+mcVersion: 1.21.3
+pluginSerial: 0
+haspermission: false
+permission: rpgitems.item.use.pal:colera_vengativa
+display: '&6&lCólera &e&lVengativa'
+damageMin: 0
+damageMax: 0
+armour: 0
+armourExpression: ''
+playerArmourExpression: ''
+DamageType: ''
+attributemode: PARTIAL_UPDATE
+description: []
+item: ELYTRA
+ignoreWorldGuard: false
+canBeOwned: false
+hasStackId: false
+item_data: 0
+components: {}
+powers:
+  '0':
+    powerName: rpgitems:potionself
+    powerId: potionself-0
+    cost: 1
+    clear: false
+    type: INCREASE_DAMAGE
+    triggers: RIGHT_CLICK
+    duration: 200
+    summingUp: false
+    requireHurtByEntity: true
+    cooldown: 0
+    amplifier: 1
+  '1':
+    powerName: rpgitems:dummy
+    powerId: dummy-1
+    cost: -1
+    successResult: OK
+    triggers: HURT
+    doEnchReduceCost: false
+    requireHurtByEntity: true
+    enchantmentType: unbreaking
+    enchCostPercentage: 6.0
+    costResult: COST
+    showCDWarning: true
+    checkDurabilityBound: true
+    cooldownResult: COOLDOWN
+    cooldown: 0
+    globalCooldown: false
+    costByEnchantment: false
+    cooldownKey: dummy
+    costByDamage: false
+conditions: {}
+markers: {}
+triggers: {}
+hitCost: 0
+hittingCost: 0
+blockBreakingCost: 0
+hitCostByDamage: false
+maxDurability: 30
+defaultDurability: 30
+durabilityLowerBound: 2
+durabilityUpperBound: 3
+hasDurabilityBar: true
+showPowerText: true
+showArmourLore: true
+damageMode: FIXED
+customModelData: 0
+enchantMode: DISALLOW
+itemFlags:
+- HIDE_ATTRIBUTES
+customItemModel: false
+barFormat: NUMERIC
+alwaysAllowMelee: false
+isTemplate: false
+type: item
+templates: {}
+templatePlaceholders: {}

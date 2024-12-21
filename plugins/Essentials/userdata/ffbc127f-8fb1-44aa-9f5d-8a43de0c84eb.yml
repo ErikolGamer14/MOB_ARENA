@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 201.233.5.215
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1734757855814
+  login: 1734756823436
+money: '0'
+last-account-name: Axlfire
+logoutlocation:
+  world: d85f0e71-972d-4837-847a-f132258fbc06
+  world-name: world
+  x: -1.9090881340774595
+  y: 60.0
+  z: -45.70846238841909
+  yaw: -34.70035934448242
+  pitch: 4.95003604888916

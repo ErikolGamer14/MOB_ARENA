@@ -1,0 +1,79 @@
+name: pal:ashbringer
+uid: -73850975
+author: 0d982a7c-c63d-4d65-a0ac-8651b3ad11e6
+note: ''
+license: All Right Reserved
+mcVersion: 1.21.3
+pluginSerial: 0
+haspermission: false
+permission: rpgitems.item.use.pal:ashbringer
+display: '&x&F&B&0&8&0&8&lA&x&F&C&2&1&0&6&ls&x&F&D&3&A&0&5&lh&x&F&D&5&4&0&3&lB&x&F&E&6&D&0&2&lr&x&F&F&8&6&0&0&li&x&F&F&9&7&1&4&ln&x&F&F&A&7&2&7&lg&x&F&F&B&8&3&B&le&x&F&F&C&8&4&E&lr'
+damageMin: 0
+damageMax: 3
+armour: 0
+armourExpression: ''
+playerArmourExpression: ''
+DamageType: ''
+attributemode: PARTIAL_UPDATE
+description:
+- '&f&1'
+- '&f&7&orecupera 2 corazones de absorcion'
+- '&f&7&ocada 5 minutos.'
+item: GOLDEN_SWORD
+ignoreWorldGuard: false
+canBeOwned: false
+hasStackId: false
+item_data: 0
+components: {}
+powers:
+  '0':
+    powerName: rpgitems:potiontick
+    powerId: potiontick-0
+    cost: 0
+    clear: false
+    triggers: POTION_EFFECT,TICK
+    duration: 6000
+    summingUp: false
+    effect: ABSORPTION
+    amplifier: 0
+    interval: 6000
+conditions: {}
+markers:
+  '0':
+    markerName: rpgitems:unbreakable
+    markerId: unbreakable-0
+  '1':
+    markerName: rpgitems:attributemodifier
+    amount: -2.5
+    namespacedKey: rpgitems:1acc7072-faaa-4d86-8607-c509dff60ff4
+    name: '1'
+    attribute: attack_speed
+    operation: ADD_NUMBER
+    markerId: attributemodifier-0
+triggers: {}
+hitCost: 0
+hittingCost: 0
+blockBreakingCost: 0
+hitCostByDamage: false
+maxDurability: -1
+defaultDurability: -1
+durabilityLowerBound: 0
+durabilityUpperBound: 0
+hasDurabilityBar: false
+showPowerText: false
+showArmourLore: true
+damageMode: VANILLA
+customModelData: 0
+enchantments:
+  sweeping_edge: 2
+  smite: 3
+enchantMode: ALLOW
+itemFlags:
+- HIDE_ATTRIBUTES
+customItemModel: false
+barFormat: DEFAULT
+alwaysAllowMelee: false
+isTemplate: false
+type: GOLDEN_SWORD
+templates: {}
+templatePlaceholders: {}

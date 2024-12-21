@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": "53bdb67b-9d60-4b48-944d-d8105edf5a26",
+    "name": "Hemeriox",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "0d982a7c-c63d-4d65-a0ac-8651b3ad11e6",
+    "name": "ErikolGamer14",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "ffbc127f-8fb1-44aa-9f5d-8a43de0c84eb",
+    "name": "Axlfire",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "7c18884c-ad39-4cd3-85f5-2cb726bf97a5",
+    "name": "Domaze",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

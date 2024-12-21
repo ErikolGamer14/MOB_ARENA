@@ -1,0 +1,120 @@
+name: il:sword
+uid: -1643508226
+author: 0d982a7c-c63d-4d65-a0ac-8651b3ad11e6
+note: ''
+license: All Right Reserved
+mcVersion: 1.21.3
+pluginSerial: 0
+haspermission: false
+permission: rpgitems.item.use.il:sword
+display: '&f&lEspada &x&2&3&1&D&2&B&lI&x&2&A&2&3&2&B&ln&x&3&1&2&9&2&A&lf&x&4&6&3&F&4&0&le&x&5&A&5&4&5&5&lr&x&8&3&7&F&7&F&ln&x&9&8&9&4&9&5&la&x&A&D&A&9&A&A&ll'
+damageMin: 0
+damageMax: 3
+armour: 0
+armourExpression: ''
+playerArmourExpression: ''
+DamageType: melee
+attributemode: PARTIAL_UPDATE
+description:
+- '&f&7Flaming I'
+- '&f&f&lClic Derecho &r| &aPoder Ancestral'
+item: NETHERITE_SWORD
+ignoreWorldGuard: false
+canBeOwned: false
+hasStackId: false
+item_data: 0
+components: {}
+powers:
+  '0':
+    powerName: rpgitems:flame
+    powerId: flame-1
+    cost: 0
+    burntime: 120
+    triggers: HIT
+  '1':
+    powerName: rpgitems:commandhit
+    powerId: commandhit-0
+    cost: 10
+    display: firearea
+    permission: ''
+    triggers: HIT
+    command: ignispasive
+    requireHurtByEntity: true
+    cooldown: 0
+    conditions: fireareacon
+    minDamage: 0.0
+  '2':
+    powerName: rpgitems:projectile
+    projectileType: smallfireball
+    eggHatchEntity: CHICKEN
+    range: 15
+    isCone: false
+    setFireballDirection: false
+    speed: 1.0
+    burstInterval: 10
+    firingLocation: SELF
+    eggHatchNumber: -1
+    requireHurtByEntity: true
+    yield: 0.0
+    cooldown: 0
+    initialRotation: 0.0
+    firingR: '0,0000,10,0000 '
+    powerId: projectile-0
+    amount: 1
+    burstCount: 10
+    cost: 0
+    eggShouldHatch: true
+    isIncendiary: false
+    castOff: false
+    suppressArrow: false
+    triggers: RIGHT_CLICK
+    applyForce: false
+    firingPhi: '0,0000 '
+    fireballItem: blaze_powder
+    gravity: true
+    firingTheta: '0,0000 '
+    firingRange: 64.0
+conditions:
+  '0':
+    conditionName: rpgitems:durabilitycondition
+    isStatic: false
+    durabilityMin: 11
+    isCritical: false
+    durabilityMax: 11
+    id: fireareacon
+markers:
+  '0':
+    markerName: rpgitems:attributemodifier
+    amount: 3.0
+    namespacedKey: rpgitems:ac6add20-1acc-41c9-ab7a-5676202a45f7
+    name: atk
+    attribute: attack_damage
+    operation: ADD_NUMBER
+    markerId: attributemodifier-0
+triggers: {}
+hitCost: 0
+hittingCost: -1
+blockBreakingCost: 0
+hitCostByDamage: false
+maxDurability: 11
+defaultDurability: 11
+durabilityLowerBound: 0
+durabilityUpperBound: 10
+hasDurabilityBar: true
+showPowerText: false
+showArmourLore: true
+damageMode: VANILLA
+customModelData: 0
+enchantments: {}
+enchantMode: ALLOW
+itemFlags:
+- HIDE_ATTRIBUTES
+- HIDE_ENCHANTS
+- HIDE_UNBREAKABLE
+customItemModel: false
+barFormat: NUMERIC_MINUS_ONE
+alwaysAllowMelee: false
+isTemplate: false
+type: NETHERITE_SWORD
+templates: {}
+templatePlaceholders: {}

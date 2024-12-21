@@ -1,0 +1,60 @@
+name: il:rod
+uid: -584564920
+author: 0d982a7c-c63d-4d65-a0ac-8651b3ad11e6
+license: All Right Reserved
+mcVersion: 1.21.3
+pluginSerial: 0
+haspermission: false
+permission: rpgitems.item.use.il:rod
+display: WOODEN_SWORD
+damageMin: 0
+damageMax: 3
+armour: 0
+armourExpression: ''
+playerArmourExpression: ''
+DamageType: ''
+attributemode: PARTIAL_UPDATE
+description: []
+item: BLAZE_ROD
+ignoreWorldGuard: false
+canBeOwned: false
+hasStackId: false
+item_data: 0
+components: {}
+powers:
+  '0':
+    powerName: rpgitems:command
+    powerId: command-0
+    cost: 0
+    display: Fireball
+    permission: ''
+    triggers: LEFT_CLICK
+    command: ignisb
+    requireHurtByEntity: true
+    cooldown: 100
+conditions: {}
+markers: {}
+triggers: {}
+hitCost: 0
+hittingCost: 0
+blockBreakingCost: 0
+hitCostByDamage: false
+maxDurability: -1
+defaultDurability: 0
+durabilityLowerBound: 0
+durabilityUpperBound: 0
+hasDurabilityBar: false
+showPowerText: true
+showArmourLore: true
+damageMode: FIXED
+customModelData: 0
+enchantMode: DISALLOW
+itemFlags:
+- HIDE_ATTRIBUTES
+customItemModel: false
+barFormat: DEFAULT
+alwaysAllowMelee: false
+isTemplate: false
+type: item
+templates: {}
+templatePlaceholders: {}

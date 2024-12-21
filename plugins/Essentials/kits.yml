@@ -1,0 +1,5 @@
+kits:
+  spawn:
+    delay: 10
+    items:
+    - written_book 1 title:MOB_ARENA_INTRO author:ErikolGamer14 page1:BIENVENIDO_A_LA|____________MOB_ARENA|||WORK_IN_PROGRESS

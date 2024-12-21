@@ -1,0 +1,172 @@
+name: pal:colera_vengativa
+uid: -402941027
+author: 0d982a7c-c63d-4d65-a0ac-8651b3ad11e6
+note: ''
+license: All Right Reserved
+mcVersion: 1.21.3
+pluginSerial: 0
+haspermission: false
+permission: rpgitems.item.use.pal:colera_vengativa
+display: '&6&lCólera &e&lVengativa'
+damageMin: 0
+damageMax: 0
+armour: 0
+armourExpression: ''
+playerArmourExpression: ''
+DamageType: ''
+attributemode: PARTIAL_UPDATE
+description:
+- '&fNivel de poder'
+- '&f&f&n__1__2__3__4'
+item: ELYTRA
+ignoreWorldGuard: false
+canBeOwned: false
+hasStackId: false
+item_data: 0
+components: {}
+powers:
+  '0':
+    powerName: rpgitems:dummy
+    powerId: dummy-0
+    cost: -1
+    successResult: OK
+    triggers: HIT_GLOBAL
+    doEnchReduceCost: false
+    requireHurtByEntity: true
+    enchantmentType: unbreaking
+    enchCostPercentage: 6.0
+    costResult: COST
+    showCDWarning: false
+    checkDurabilityBound: false
+    cooldownResult: COOLDOWN
+    cooldown: 30
+    globalCooldown: false
+    costByEnchantment: false
+    cooldownKey: dummy
+    costByDamage: false
+  '1':
+    powerName: rpgitems:potionself
+    powerId: potionself-0
+    cost: 12
+    displayName: /
+    clear: false
+    type: INCREASE_DAMAGE
+    triggers: RIGHT_CLICK
+    duration: 300
+    summingUp: false
+    requireHurtByEntity: true
+    cooldown: 0
+    amplifier: 0
+    conditions: palcon1
+  '2':
+    powerName: rpgitems:potionself
+    powerId: potionself-1
+    cost: 49
+    clear: false
+    type: INCREASE_DAMAGE
+    triggers: RIGHT_CLICK
+    duration: 300
+    summingUp: false
+    requireHurtByEntity: true
+    cooldown: 0
+    amplifier: 3
+    conditions: palcon4
+  '3':
+    powerName: rpgitems:potionself
+    powerId: potionself-2
+    cost: 24
+    clear: false
+    type: INCREASE_DAMAGE
+    triggers: RIGHT_CLICK
+    duration: 400
+    summingUp: false
+    requireHurtByEntity: true
+    cooldown: 0
+    amplifier: 1
+    conditions: palcon2
+  '4':
+    powerName: rpgitems:potionself
+    powerId: potionself-3
+    cost: 36
+    clear: false
+    type: INCREASE_DAMAGE
+    triggers: RIGHT_CLICK
+    duration: 400
+    summingUp: false
+    requireHurtByEntity: true
+    cooldown: 0
+    amplifier: 2
+    conditions: palcon3
+  '5':
+    powerName: rpgitems:dummy
+    powerId: dummy-1
+    cost: -2
+    successResult: OK
+    triggers: HURT
+    doEnchReduceCost: false
+    requireHurtByEntity: true
+    enchantmentType: unbreaking
+    enchCostPercentage: 6.0
+    costResult: COST
+    showCDWarning: false
+    checkDurabilityBound: false
+    cooldownResult: COOLDOWN
+    cooldown: 60
+    globalCooldown: false
+    costByEnchantment: false
+    cooldownKey: dummy
+    costByDamage: false
+conditions:
+  '0':
+    conditionName: rpgitems:durabilitycondition
+    isStatic: false
+    durabilityMin: 13
+    isCritical: false
+    durabilityMax: 24
+    id: palcon1
+  '1':
+    conditionName: rpgitems:durabilitycondition
+    isStatic: false
+    durabilityMin: 25
+    isCritical: false
+    durabilityMax: 37
+    id: palcon2
+  '2':
+    conditionName: rpgitems:durabilitycondition
+    isStatic: false
+    durabilityMin: 37
+    isCritical: false
+    durabilityMax: 49
+    id: palcon3
+  '3':
+    conditionName: rpgitems:durabilitycondition
+    isStatic: false
+    durabilityMin: 50
+    isCritical: false
+    durabilityMax: 50
+    id: palcon4
+markers: {}
+triggers: {}
+hitCost: 0
+hittingCost: 0
+blockBreakingCost: 0
+hitCostByDamage: false
+maxDurability: 50
+defaultDurability: 1
+durabilityLowerBound: 2
+durabilityUpperBound: 2
+hasDurabilityBar: true
+showPowerText: false
+showArmourLore: true
+damageMode: FIXED
+customModelData: 0
+enchantMode: DISALLOW
+itemFlags:
+- HIDE_ATTRIBUTES
+customItemModel: false
+barFormat: DEFAULT
+alwaysAllowMelee: false
+isTemplate: false
+type: ELYTRA
+templates: {}
+templatePlaceholders: {}

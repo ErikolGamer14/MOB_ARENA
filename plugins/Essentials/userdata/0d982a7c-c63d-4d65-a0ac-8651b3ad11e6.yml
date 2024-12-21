@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 192.168.0.14
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1734757170913
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1734757855761
+  login: 1734756439693
+money: '0'
+logoutlocation:
+  world: d85f0e71-972d-4837-847a-f132258fbc06
+  world-name: world
+  x: 8.699999988079071
+  y: 60.0
+  z: -39.42770726384917
+  yaw: 126.3988037109375
+  pitch: -2.699981927871704
+last-account-name: ErikolGamer14
+lastlocation:
+  world: d85f0e71-972d-4837-847a-f132258fbc06
+  world-name: world
+  x: 61.948926992431296
+  y: 89.0
+  z: -2.8083936791114112
+  yaw: 137.50070190429688
+  pitch: 30.049869537353516

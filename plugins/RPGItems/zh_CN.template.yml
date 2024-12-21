@@ -1,0 +1,1549 @@
+message:
+  translocator: '%s 的传送信标'
+  barformat:
+    numeric: 耐久条设置为数值显示
+    numeric_hex_minus_one: 耐久条设置为十六进制数值减一
+    numeric_bin: 耐久条设置为二进制数值
+    numeric_bin_minus_one: 耐久条设置为二进制数值减一
+    numeric_hex: 耐久条设置为十六进制数值
+    numeric_minus_one: 耐久条设置为数值减一
+    default: 耐久条设置为默认（方块）
+  import:
+    gist:
+      timeout: Gist 下载超时
+      failed: Gist 下载失败
+      code: Gist API 调用错误： %d
+      ing: 正在导入 Gist 中的物品
+      ed: Gist 导入成功
+      notfound: 未找到 https://gist.github.com/%s ，请检查 Gist ID 是否正确
+    success: 物品 %s （UID： %d）导入成功
+    not_supported: 不支持从 %s 导入
+    url:
+      code: 错误： %d
+      ed: Url 导入成功
+      failed: Url 下载失败
+      notfound: 未找到 %s
+      ing: 正在导入 Url 中的物品
+      timeout: Url 下载超时
+    conflict_name: 待导入物品与现有物品有相同名称： %s ，请在命令中使用 <原名称>:<新名称> 指定新名称
+    invalid_conf: 物品配置无效： %s
+    conflict_uid: 待导入物品 %s 与现有物品 %s 有相同 UID： %d , 请检查是否已拥有该物品。
+  enchantmode:
+    permission: 物品 '%s' 附魔模式设定为需要权限（rpgitem.enchant.[item name]）
+    allow: 物品 '%s' 附魔模式设定为允许附魔
+    disallow: 物品 '%s' 附魔模式设定为禁止附魔（默认）
+  armour:
+    get: 物品 '%s' 护甲为 '%d%%'
+    set: 物品 '%s' 护甲已设置为 '%d%%'
+  command:
+    usage: '指令用法: /%s (%s)'
+    info: 更详细帮助信息请查看 https://github.com/NyaaCat/RPGItems-reloaded/wiki，或输入 /rpgitem
+      help [关键词]
+  error:
+    invalid_option: '输入 %s 对于 %s 无效. 可选项: %s'
+    item: 未知物品 '%s'
+    only:
+      player: 这个指令只能由游戏中的玩家执行
+    file_not_exists: 文件不存在：%s
+    recovering: §c§l恢复 %s 自 %s 失败：%s。建议停止服务器并手动检查物品配置及其备份。
+    invalid_regex: 无效的正则表达式
+    permission: 你没有权限： '%s'
+    double:
+      limit: 数值必须在 %.2f 到 %.2f 之间
+      format: '''%s'' 不是双数'
+    string:
+      length: '''%s'' 长度超过最大值 %d'
+    damagetolarge: 伤害值过高，最大32767
+    command:
+      format: 显示文本和指令必须用 | 这个符号分隔开
+    integer:
+      limit: 数值必须在 %d 到 %d 之间
+      format: '''%s'' 不是一个整数'
+    player: 没有找到玩家 %s
+    reloading_locked: 无法重载被锁定的物品！使用 `/rpgitem backupitem` 以备份并解锁该物品。
+    unknown:
+      command: '错误: 未知指令 %s'
+      extension: 未知扩展： %s
+    iteminhand: 手中没有物品
+    need_material: 你需要 %s 以修复此物品
+    invalid_enchant: 无效附魔 %s
+    material: 未知材质 '%s'
+    invalid_command_arg: 加载技能失败：%s，%s
+    legacy_name: '%s 在 Spigot 1.13 有一个新名字：%s'
+    verifying: |-
+      §c§l验证%s完整性出错，物品可能没有正确保存。
+      §c§l建议停止服务器并手动检查物品配置及其备份，并向我们提交BUG并附带上后台日志，谢谢。
+      §e%s
+    effect: '%s 不是一个有效的效果'
+    invalid_expression: 无效表达式 %s
+    economy: 未找到经济支持插件
+    item_unlocked: 无法编辑已解锁的物品%s。请重载它再编辑。
+    visualeffect: '%s 不是一个有效的视觉效果'
+    loading: 从%s加载物品时出错。%s
+    option: 无效项 '%s'
+  enchantment:
+    fail: 失败，手中没有物品
+    empty_ench: 这个物品没有任何附魔
+    removed: 附魔已移除
+    bad_ench: '不存在该附魔: %s'
+    no_such_ench: 该物品不具有此附魔
+    item: 附魔:%s 等级:%d
+    no_ench: 此物品未带有附魔
+    success: 已成功添加附魔
+    listing: 物品 %s 带有的附魔
+  durability:
+    info: '耐久 最大: %d, 默认: %d, 下限: %d, 上限: %d'
+    toggle: 耐久条已切换
+    default: 默认耐久已设置为 %s
+    bound: 耐久下界和上界已设置为 %s 与 %s
+    max_and_default: 最大及默认耐久已设置为 %s
+  trigger:
+    not_found: 未找到满足 %s 的触发
+    ok: 触发 %s 已添加
+    change: 已改变触发
+    key: §3§l触发 '§r%s§3§l'
+    description: '§3§l描述: ''§r%s'''
+    unknown: 未知触发 %s
+    removed: 触发 %s 已移除
+    show: 触发 %s - base %s (%s)：%s
+    unknown_base: 未知基触发 %s。可选项：%s
+  item:
+    author:
+      set: 物品 %s 的作者已设置为 {author}
+      na: 物品 %s 的作者不详
+      get: 物品 %s 的作者为 {author}
+    file_deleted: 物品配置已删除
+    no_backup: 未找到物品 %s 的备份。
+    print: '{itemName}'
+    load: 已载入物品 %s {item}
+    license:
+      set: |-
+        物品 %s 的协议已设置为：
+        %s
+      na: 物品 %s 的协议不详
+      get: |-
+        物品 %s 的协议为：
+        %s
+    cant:
+      find: 没有找到该物品
+    note:
+      na: 物品 %s 无说明
+      set: |-
+        物品 %s 的说明已设置为：
+        %s
+      get: |-
+        物品 %s 的说明为：
+        %s
+    get: '物品 ''%s'' 材质为 {itemName} (%s): %d '
+    unlocked: 物品 %s 已解锁，备份至 %s。
+    empty_dir: 跳过空目录 %s
+    list: '%s - {item}'
+    cleanbackup: 已清理备份。
+    dump: |-
+      物品 %s:
+      %s
+    backedup: 物品 %s 已备份至 %s。
+    recovering: 重载物品失败，恢复中。您的修改已保存至 %s
+    set: '物品 ''%s'' 材质已设置为 {itemName} (%s): %d '
+    power: 技能 %d %s (%s)：%s §r[%s]
+  itemflag:
+    remove: 已将ItemFlag %s从物品上移除
+    notfound: 未找到ItemFlag %s
+    add: 成功添加ItemFlag %s
+  spu:
+    entity:
+      updated: '%s §r实体已升级：%s -> %s'
+      code: '%s §r实体升级失败：%d, %s %s'
+      failed: '%s §r命令升级失败：%s %s'
+      timeout: '%s §r命令升级超时'
+    command:
+      timeout: '%s §r命令升级超时'
+      warn: '警告: %s'
+      failed: "%s §r命令升级失败：%s\n%s "
+      updated: |-
+        %s §r命令已升级:
+        %s ->
+        %s
+      code: "%s §r命令升级失败：%d, %s\n%s "
+    no_endpoint: 未设置 SPU 服务器地址
+    finish: 数据升级完成
+  group:
+    note: 备注：%s
+    removed: 物品组 %s 已移除
+    header: 物品组 %s （共 %d 个物品）
+  propertyHolder:
+    description: §3§l-| §r%s
+    property_value: §b-| §r%s
+    no_description: 暂无说明
+    property: §b-| %s： §r%s
+    required: 缺少必填属性
+  cost:
+    change: 消耗已设置
+    get: 消耗为 %d
+    hit_toggle:
+      disable: 被击中消耗为固定值
+      enable: 被击中消耗为伤害百分比
+  model:
+    is: 这是一个物品模型
+    to: 物品已转换为模型
+  marker:
+    description: '§3§l描述: ''§r%s'''
+    removed: 标志 %s 已移除
+    show: 标志 %s - (%s)：%s
+    ok: 标志 %s 已添加
+    change: 物品标志参数已更改
+    key: §3§l标志 '§r%s§3§l'
+    no_display: 无展示文本
+    not_found: 未找到满足 %s 的标志
+    unknown: 未知标志 %s
+  type:
+    set: 物品 '%s' 类型已设置为 '%s'
+    get: 物品 '%s' 类型为 '%s'
+  damagemode:
+    fixed: 物品 '%s' 伤害模式设定为固定伤害（默认）
+    vanilla: 物品 '%s' 伤害模式设定为原版伤害
+    multiply: 物品 '%s' 伤害模式设定为乘法伤害（原版伤害乘以RPG伤害）
+    additional: 物品 '%s' 伤害模式设定为附加伤害（原版伤害加RPG伤害）
+  customitemmodel:
+    enable: 自定义物品模型开启
+    disable: 自定义物品模型关闭
+  property:
+    required: 此技能至少需要输入以下属性参数 %s
+  damage:
+    set:
+      value: 物品 '%s' 伤害设置为 %d
+      range: 物品 '%s' 伤害设置为 %d-%d
+    get: 物品 '%s' 伤害为 %d-%d
+  worldguard:
+    override:
+      disabled: 已开启Worldguard的限制
+      active: 已忽略Worldguard的限制
+    enable: Worldguard支持已启用
+    disable: Worldguard支持已禁用
+    error: 没有发现Worldguard插件
+  remove:
+    ok: 物品 '%s' 已删除
+  armor_expression:
+    set: 已设置护甲计算表达式 %s
+  modifier:
+    removed: 修饰 %s 已移除
+    ok: 修饰 %s 已添加
+    not_found: 未找到满足 %s 的修饰
+    show: 修饰 %s - %s (%s)：%s
+    key: §3§l修饰 '§r%s§3§l'
+    change: 物品修饰参数已更改
+    remove: 移除修饰符
+    unknown: 未知修饰 %s
+    description: '§3§l描述: ''§r%s'''
+  power:
+    ignored_trigger: 忽略物品%3$s技能%2$s的未知触发%1$s
+    no_display: 无说明
+    unknown: 未知技能 %s
+    reorder: 技能 %s 已调整至 %d 号位
+    removed: 技能 %s 已从 %d 号位移除
+    description: '§3§l描述: ''§r%s'''
+    key: §3§l技能 §r%s§3§l
+    change: 物品技能参数已更改
+    ok: 技能 %s 已添加至 %d 号位
+    no_description: 无说明
+    show: 技能 %d - %s (%s)：%s §r[%s]
+    not_found: 未找到满足 %s 的技能
+  power_property:
+    change: 技能属性已设置
+    all: |-
+      第 %d 个技能 '%s'：
+      %s
+    property_unsupporttype: '''%s'' 不属于类型 int/double/String/boolean'
+    not_vaild_int: '''%s'' 不是一个有效的整数'
+    not_vaild_bool: '''%s'' 不是一个有效的布尔值'
+    power_notfound: 物品无此技能：%s %d
+    property_notfound: 未知技能属性 %s
+    get: 第 %d 个技能 '%s' 的技能属性 %s 为 %s
+  toggleLore:
+    show: 文字已显示
+    hide: 文字已隐藏
+  line_separator: ' '
+  hand:
+    set: 设置物品 '%s' 手持状态为 '%s'
+    get: 物品 '%s' 手持状态为 '%s'
+  wgforcerefresh:
+    disable: Worldguard 自定义标志强制刷新已禁用
+    enable: Worldguard 自定义标志强制刷新已启用
+  color:
+    next: '%s 颜色已改变！'
+  print:
+    durability: '最大耐久度: %d'
+    license: 授权：%s
+    note: 说明：%s
+    itemflags: 'ItemFlags: '
+    author: 作者：{author}
+    customitemmodel: '自定义模型: %s'
+  give:
+    ok: 你被赠予 %s
+    to: 把 %s 给 %s
+    console: 无法在控制台使用此指令
+  description:
+    remove: 该行文本已移除
+    ok: 该行文本已增加
+    change: 该行文本已变更
+  condition:
+    not_found: 未找到满足 %s 的条件
+    show: 条件 %s - %s (%s)：%s
+    change: 物品条件参数已更改
+    removed: 条件 %s 已移除
+    changed: Item's condition property has been changed
+    description: '§3§l描述: ''§r%s'''
+    unknown: 未知条件 %s
+    key: §3§l条件 '§r%s§3§l'
+    ok: 条件 %s 已添加
+  lore:
+    get: 物品 '%s' 描述为 '%s'
+    set: 物品 '%s' 描述已设置为 '%s
+  update:
+    fail: 物品 '%s' 升级失败：%s，请查看后台输出
+    success: 成功升级物品 {item}
+  display:
+    get: 物品 '%s' 展示名为 '%s'
+    set: 物品 '%s' 展示名已设置为 '%s'
+  cooldown:
+    general: 冷却时间还没有结束, 请等待 %.1f 秒再使用%s
+    power: 冷却时间还没有结束, 请等待 %.1f 秒再使用%s§r的%s
+  export:
+    gist:
+      token: 未指定 Gist Token，请在命令中指定 token:<token> 或者配置中配置 githubToken
+      ed: 导出成功 https://gist.github.com/%s
+      failed: Gist 上传失败
+      code: Gist API 调用错误： %d
+      timeout: Gist 上传超时
+    not_supported: 不支持从 %s 导出
+  wgcustomflag:
+    enable: Worldguard 自定义标志已启用
+    disable: Worldguard 自定义标志已禁用
+  damagetype:
+    set: 已设置伤害类型 %s
+  permission:
+    success: 权限限制设定成功 !
+    booleanerror: 启用值必须为布尔值 ! (true 或 false)
+  skyhook:
+    fail: 你没有钩到任何东西
+  no_item: 暂无物品。
+  attributemode:
+    set: 物品 {itemName} 的 attribute mode 设置为 %s
+  help:
+    for: 显示 '%s' 的帮助信息
+  create:
+    ok: 物品 '%s' 已创建
+    fail: 该物品名已存在
+  num_out_of_range: '%d 已超出范围 (%d, %d]'
+  cloneitem:
+    success: 物品 %s 成功克隆为 %s
+    fail: 物品 %s 克隆失败： %s 已存在
+  stuck: 你已经被定身，无法传送！
+  custom_model_data:
+    set: 物品的自定义模型ID已设置为 %d
+  giveperms:
+    canceled: 给予现在不需要权限
+    required: 给予现在需要权限
+  too:
+    far: 太远了...
+  version: |-
+    RPGItem v%s （{GIT_BRANCH} 分支，{GIT_HASH}）
+
+    版权所有 © 2021 NyaaCat 开发组
+    版权所有 © 2013 TheCreeperOfRedstone
+    以 MIT 授权
+    Bug反馈: https://github.com/NyaaCat/RPGItems-reloaded/issues
+manual:
+  damage:
+    usage: /rpgitem damage {item} [option]
+    description: |-
+      展示/设置物品的伤害值。可用的参数：
+      [value] - 设置物品伤害值为定值。/rpgitem test_item damage 15
+      [min] [max] - 设置物品伤害值为一个范围随机值。/rpgitem test_item damage 10 20
+  give:
+    description: 将物品给与施令者或特定玩家
+    usage: /rpgitem give {item} [player]
+  condition:
+    description: 设置物品激活技能时需要的条件
+    remove:
+      usage: /rpgitem condition remove {item} <properties>
+      description: 从物品上移除条件
+    usage: /rpgitem condition [option] {item} <condition> <properties> [optionalProperties]
+    prop:
+      usage: /rpgitem condition prop {item} <properties> [optionalProperties]
+      description: 展示/修改物品的条件
+    list:
+      usage: /rpgitem condition list
+      description: 列出所有的条件
+    help:
+      description: 查看condition命令的帮助
+      usage: /rpgitem condition [help]
+    add:
+      description: 给物品添加条件
+      usage: /rpgitem condition add {item} <properties> [optionalProperties]
+  remove:
+    usage: /rpgitem remove {item}
+    description: 移除此物品
+  template:
+    delete:
+      usage: /rpgitem template delete {item}
+      description: 删除指定模板
+    usage: /rpgitem template [option]
+    help:
+      usage: /rpgitem template [help]
+      description: 查看template命令的帮助
+    create:
+      description: 以特定物品创建模板
+      usage: /rpgitem template create {item}
+    apply:
+      usage: /rpgitem template apply {item}
+      description: 对物品应用指定模板
+    placeholder:
+      usage: /rpgitem template placeholder <option> {item} <powerId:property>
+      description: 设定模板的技能占位符，被设定的技能指定参数在应用模板时不会发生变化
+    description: 设置物品的模板
+  description:
+    description: 添加/移除或替换物品描述的文本。支持使用 § 符号作为样式代码。行号从 0 开始。
+    usage: /rpgitem description {item} <add <value>|set <line> <value>| remove <line>>
+  reorder:
+    description: 调整物品技能的顺序位
+    usage: /rpgitem power reorder {item} <power> <power>
+  command:
+    template:
+      placeholder:
+        bad_placeholder: 无效占位符 %s
+        add:
+          success: 为模板 %s 添加了占位符
+        info: 占位符信息： %s
+        not_template: 物品 %s 不是有效的模板
+        itemName: 物品： %s
+        remove:
+          success: 从模板 %s 移除了占位符
+      create:
+        success: 成功从物品 %s 创建模板
+      not_template: 物品 %s 不是有效的模板
+      apply:
+        success: 模板 %s 已应用至物品
+      delete:
+        success: 已删除模板 %s
+  power:
+    remove:
+      description: 从物品上移除技能
+      usage: /rpgitem power remove {item} <properties>
+    usage: /rpgitem power [option] {item} <power> <properties> [optionalProperties]
+    help:
+      description: 查看power命令的帮助
+      usage: /rpgitem power [help]
+    add:
+      description: 给物品添加技能
+      usage: /rpgitem power add {item} <properties> [optionalProperties]
+    prop:
+      description: 展示/修改物品的技能
+      usage: /rpgitem power prop {item} <properties> [optionalProperties]
+    list:
+      description: 列出所有的技能
+      usage: /rpgitem power list
+    description: 设置物品的技能
+  removefromgroup:
+    usage: /rpgitem removefromegroup {item} {group}
+    description: 从物品组中移除物品
+  create:
+    usage: /rpgitem create <名称>
+    description: 创建特定名称的物品
+  export:
+    usage: /rpgitem export {item} <gist>
+    description: 导出指定物品
+  apply:
+    usage: /rpgitem template apply {item}
+    description: 对物品应用指定模板
+    placeholder:
+      usage: /rpgitem template placeholder <option> {item} <powerId:property>
+      description: 为模板设置技能属性，已设置的属性在应用模板时不会变化。
+    delete:
+      usage: /rpgitem template delete {item}
+      description: Delete specific template.
+  marker:
+    usage: /rpgitem marker [option] {item} <properties> [optionalProperties]
+    remove:
+      usage: /rpgitem marker remove {item} <properties>
+      description: 从物品上移除标志
+    add:
+      description: 给物品添加标志
+      usage: /rpgitem marker add {item} <properties> [optionalProperties]
+    description: 设置物品的标志
+    help:
+      usage: /rpgitem marker [help]
+      description: 查看marker命令的帮助
+    prop:
+      description: 展示/修改物品的标志
+      usage: /rpgitem marker prop {item} <properties> [optionalProperties]
+    list:
+      description: 列出所有的标志
+      usage: /rpgitem marker list
+  removegroup:
+    description: 删除物品组
+    usage: /rpgitem removegroup {group}
+  customModel:
+    description: 设置物品的自定义模型ID
+    usage: /rpgitem customModel {item} <value>
+  damageType:
+    description: 设置物品伤害类型
+    usage: /rpgitem damageType {item} <value>
+  modifier:
+    description: 设置物品的标志
+    help:
+      usage: /rpgitem modifier [help]
+      description: 查看modifier命令的帮助
+    remove:
+      description: 从物品上移除修饰
+      usage: /rpgitem modifier remove {item} <properties>
+    list:
+      description: 列出所有的修饰
+      usage: /rpgitem modifier list
+    add:
+      description: 给物品添加修饰
+      usage: /rpgitem modifier add {item} <properties> [optionalProperties]
+    prop:
+      usage: /rpgitem modifier prop {item} <properties> [optionalProperties]
+      description: 展示/修改物品的修饰
+    usage: /rpgitem marker [option] {item} <properties> [optionalProperties]
+  durability:
+    usage: /rpgitem durability {item} <option>
+    description: |-
+      展示/设置物品耐久的最大值/默认值和其他参数。
+      可选参数：
+        [value] - 设置最大耐久值 - /rpgitem test_item durability 100
+        infinite - 设置为无限耐久 - /rpgitem test_item durability infinite
+        default - 设置默认耐久值 - /rpgitem test_item durability default 100
+        togglebar - 切换展示耐久条 - /rpgitem test_item durability togglebar
+        bound - 设置物品耐久边界值 - /rpgitem test_item durability bound 10 100
+  note:
+    description: 设置物品的说明
+    usage: /rpgitem note {item} <value>
+  license:
+    usage: /rpgitem lisence {item}
+    description: 查看物品的协议
+  removeitemflag:
+    description: 移除物品 flag
+    usage: /rpgitem removeitemflag {item} <itemflag>
+  clone:
+    usage: /rpgitem clone {item} <newItem>
+    description: 克隆为新物品
+  wgforcerefresh:
+    description: 切换 WorldGuard 强制刷新。
+    usage: /rpgitem wgforcerefresh
+  print:
+    description: 打印物品状态
+    usage: /rpgitem print {item}
+  permission:
+    usage: /rpgitem permission {item} <permission> <true|false>
+    description: 设置物品权限
+  loadfile:
+    usage: /rpgitem loadfile {file}
+    description: 从文件中读取物品
+  creategroup:
+    usage: /rpgitem creategroup <名称>
+    description: 新建一个物品组
+  armour:
+    description: 展示/设置物品护甲值
+    usage: /rpgitem armour {item} [value]
+  attributemode:
+    description: 物品的属性更新模式
+    usage: /rpgitem attributemode {item} <value>
+  togglepowerlore:
+    usage: /rpgitem togglepowerlore {item}
+    description: 切换展示技能说明文字。
+  giveperms:
+    description: 切换 /rpgitem give 权限
+    usage: /rpgitem giveperms
+  backupitem:
+    description: 备份一个物品
+    usage: /rpgitem backupitem {item}
+  delete:
+    usage: /rpgitem template delete {item}
+    description: 删除指定模板
+  trigger:
+    description: 设置物品的触发
+    usage: /rpgitem trigger [option] {item} <properties>
+  save-all:
+    usage: /rpgitem save-all
+    description: 保存所有物品
+  additemflag:
+    usage: /rpgitem additemflag {item} <itemflag>
+    description: 添加物品 flag。
+  enchantment:
+    usage: /rpgitem enchantment {item} [clone|clear|add|remove]
+    description: 以手中物品的附魔数据为模板，展示/复制或清除物品的附魔。
+  item:
+    description: |-
+      设置物品的材质和其他参数。
+      可选参数
+        [item id] - 设置物品为特定材质
+        [item id] hex [string] - 设置物品的材质并设置颜色。
+        [item id] [damage value] - 设置物品的材质和伤害值/损耗值。
+    usage: /rpgitem item {item} [options|value]
+  customitemmodel:
+    description: 切换物品自定义模型支持。
+    usage: /rpgitem customitemmodel {item}
+  no_description: No description for this yet.
+  version:
+    usage: /rpgitem version
+    description: 展示 RPGItem 的版本信息。
+  placeholder:
+    description: 设定模板的技能占位符，被设定的技能指定参数在应用模板时不会发生变化
+    usage: /rpgitem template placeholder <option> {item} <powerId:property>
+  help:
+    usage: /rpgitem help
+    description: RPGItems插件帮助指令
+  import:
+    description: 从Gist上导入物品
+    usage: /rpgitem import [link] [name|optional]
+  no_usage: No usage information for this yet.
+  cost:
+    usage: /rpgitem cost {item} <option>
+    description: |-
+      展示/设置耐久消耗。
+      可用参数：
+        breaking | breaking [value|integer] - 展示/设置物品破坏方块时的耐久消耗。
+        hit | hit [value|integer] - 展示/设置手持或穿着此物品被伤害时的耐久消耗。
+        toggle - 切换物品是否基于伤害值消耗耐久。
+        hitting | hitting [value|integer] - 展示/设置使用此物品攻击其他实体时的耐久消耗。
+      注意，该值可以为负。负值将在相应消耗耐久事件时为物品增加耐久。
+  reloaditem:
+    description: 重载物品
+    usage: /rpgitem reloaditem {item}
+  prop:
+    description: 显示/修改物品的技能/条件/标志/修饰
+    usage: /rpgitem <power|condition|marker|modifier> prop {item} [optionalProperties]
+  reload:
+    usage: /rpgitem reload
+    description: 重新读取配置文件
+  worldguard:
+    usage: /rpgitem worldguard
+    description: 切换 WorldGuard 支持。
+  armorExpression:
+    usage: /rpgitem armorExpression {item} <expression>
+    description: 设置物品的护甲表达式
+  author:
+    usage: /rpgitem author {item}
+    description: 显示物品的作者
+  gen-wiki:
+    description: 在RPGItems插件的文件夹下生成wiki文件
+    usage: /rpgitem gen-wiki
+  damagemode:
+    usage: /rpgitem damagemode {item} [damagemode]
+    description: 展示/设置物品的伤害模式
+  wgignore:
+    description: 该物品是否忽略 WorldGuard PvP 保护。
+    usage: /rpgitem wgignore {item}
+  display:
+    usage: /rpgitem display {item} <value>
+    description: 设置物品名称
+  removepower:
+    description: Remove the power from item. If the item have multiple specified power,
+      the first match (pit fall) will be removed.
+    usage: /rpgitem removepower {item} <power>
+  wgcustomflag:
+    description: 切换 WorldGuard custom flag 支持。
+    usage: /rpgitem wgcustomflag
+  addtogroup:
+    description: 将物品加入一个物品组
+    usage: /rpgitem addtogroup {group} {item}
+  listgroup:
+    usage: /rpgitem listgroup {group}
+    description: 列出物品组中的所有物品
+  enchantmode:
+    usage: /rpgitem enchantmode {item} <value>
+    description: 设置物品的附魔模式
+  list:
+    description: 列出所有的物品
+    usage: /rpgitem list [页数]
+  dump:
+    description: 查看物品的配置文件信息
+    usage: /rpgitem dump {item}
+  add:
+    usage: /rpgitem <power|condition|marker|modifier> add {item} <properties>
+    description: 给物品添加技能/条件/标志/修饰
+  debug:
+    usage: /rpgitem debug
+    description: 查看手中持有物品的详细信息
+  cleanbackup:
+    description: 清除所有物品的备份
+    usage: /rpgitem cleanbackup
+  togglearmorlore:
+    usage: /rpgitem togglearmorlore {item}
+    description: 切换展示护甲值说明文字。
+properties:
+  tntcannon:
+    main_name: TNT 大炮
+    main_description: 发射 TNT
+  projectile:
+    firingR: 极坐标系参数
+    yield: 爆炸物的爆炸半径
+    firingTheta: 极坐标系参数
+    burstCount: 发射次数
+    main_name: 弹射物
+    castOff: 在玩家触发的原位置执行，而非玩家的实际位置
+    speed: 弹射物速度
+    initialRotation: 极坐标系的初始旋转
+    amount: 弹射物的数量
+    isIncendiary: 爆炸物是否会点火
+    burstInterval: 每次发射之间的间隔
+    setFireballDirection: 是否设置火球的方向使其不偏离
+    main_description: 发射弹射物
+    isCone: 是否以锥形发射弹射物
+    fireballItem: 若弹射物为火球，火球所显示为的物品材质
+    eggShouldHatch: 若弹射物为鸡蛋，鸡蛋是否会孵化
+    firingPhi: 极坐标系参数
+    firingLocation: 在 SELF 或 TARGET 为中心执行
+    applyForce: 力道将影响速度
+    gravity: 弹射物是否受到重力影响
+    firingRange: 未使用
+    projectileType: 弹射物类型
+    suppressArrow: 取消箭矢（仍然会消耗）
+    eggHatchEntity: 若弹射物为鸡蛋，鸡蛋会孵化出的生物
+    eggHatchNumber: 若弹射物为鸡蛋，鸡蛋会孵化出几只生物，-1代表遵循原数量，范围应为0~127
+    range: 弹射物的散射角
+  delayedcommand:
+    cmdInPlace: 在当前位置执行命令
+    delay: 执行命令前的延迟
+    main_description: 在一段时间后执行命令
+    command: 执行的命令
+    main_name: 延迟命令
+    permission: 执行指令所需的临时权限
+  skyhook:
+    hookingTickCost: 钩子每 tick 的消耗
+    hookDistance: 可以钩的距离
+    main_name: 钩爪
+    main_description: 发射钩爪钩住指定方块
+    railMaterial: 可以钩的材质
+  noimmutabletick:
+    immuneTime: 无敌时间
+    main_name: 取消无敌时间
+    main_description: 取消被攻击怪物的无敌时间
+  scoreboard:
+    scoreOperation: NO_OP / ADD_SCORE / SET_SCORE / RESET_SCORE
+    tag: 需要添加或移除的标签，`TO_ADD,!TO_REMOVE`
+    objective: Objective 名称
+    reverseTagAfterdelay: 延迟 ticks
+    team: 需要加入或离开的队伍，`JOIN,!LEAVE`
+    main_name: 计分板
+    value: 计算用值
+    abortOnSuccess: 成功后中止后续技能
+    main_description: 添加或移除玩家的计分板标签或队伍
+    delay: 延迟 ticks
+  beam:
+    particle: 生成的粒子类型。
+    burstCount: 每次触发发射的粒子束波数。
+    castOff: 在玩家触发的原位置执行，而非玩家的实际位置
+    cone: 偏移角，度。
+    ticksBeforeHoming: 启动追踪的延迟，游戏刻。
+    extraData: 粒子的颜色参数（r,g,b,size），输入null可以置空。
+    main_name: 粒子束
+    firingLocation: 在 SELF 或 TARGET 为中心执行
+    beamAmount: 每波发射的粒子束条数。
+    effectOnly: 仅展示效果，不触发任何事件
+    main_description: 发射飞行的粒子束，粒子束有多种参数控制其行为。
+    behaviorParam: 粒子束行为的参数，JSON格式。
+    ignoreWall: 粒子束是否无视固体方块。
+    speedBias: 额外速度函数表达式（请确保表达式符合规则）。
+    spawnsPerBlock: 每方块生成粒子的次数，值越高粒子束越密集。
+    homingAngle: 粒子束锁定目标角度，度。
+    homingTarget: 追踪目标
+    damage: 粒子束击中伤害。
+    homingMode: 粒子束锁定目标的模式。
+    particleDensity: 粒子密度，推荐1-10，越高视觉效果越好，也占用更多资源
+    ttl: 粒子存在的时间，游戏刻。(length或ttl之一到达时结束)
+    bounce: 命中固体方块后可以反弹的总次数。
+    firingTheta: 极坐标系参数
+    gravity: 粒子受到的重力加速度，方块/秒^2。（追踪开始后失效）
+    homing: 粒子束追踪目标的转弯半径，方块。（0代表不追踪）
+    hitSelfWhenBounced: 命中固体方块并反弹后是否可以命中自身。
+    offsetX: 粒子生成的X轴范围，方块。（影响粒子束判定体积）
+    offsetY: 粒子生成的Y轴范围，方块。（影响粒子束判定体积）
+    offsetZ: 粒子生成的Z轴范围，方块。（影响粒子束判定体积）
+    speed: 粒子束飞行速度，方块。
+    initialRotation: 极坐标系的初始旋转
+    firingPhi: 极坐标系参数
+    mode: 生成模式，激光模式或投射模式。
+    suppressMelee: 不触发 HIT
+    particleSpeed: 粒子生成参数speed，参考/particle 。
+    burstInterval: 每波发射之间的间隔，游戏刻。
+    homingRange: 粒子束锁定目标的范围，方块。
+    firingR: 极坐标系参数
+    length: 粒子前进的总长度，方块。(length或ttl之一到达时结束)
+    pierce: 每条粒子束可总计击中的生物数量。
+    behavior: 粒子束的行为。
+    firingRange: 未使用
+  attachments:
+    limit: 配件数量
+    main_name: 配件
+    allowedItems: 可以使用的 RPGItem
+    allowedSlots: 可以使用的装备栏
+    allowedInvSlots: 可以使用的背包格，-1为禁用背包
+    main_description: 可以使用其他 RPGItem 作为配件。将会触发配件上的 ATTACHMENT 触发
+  deflect:
+    main_description: 弹反射来的箭矢或火球
+    duration: 持续时间
+    deflectCost: 每次弹反的耐久消耗量。
+    cooldownpassive: 被动弹反的冷却时间
+    facing: 最大有效视角，度
+    main_name: 弹反
+    chance: 被动弹反的百分比几率
+  particle:
+    playLocation: 可为 SELF 或 TARGET
+    dustSize: 尘埃粒子效果的大小
+    main_name: 粒子效果
+    dustColor: 尘埃粒子效果的颜色
+    material: 粒子效果的材质
+    offsetZ: Z 偏移
+    offsetY: Y 偏移
+    offsetX: X 偏移
+    delay: 延迟 ticks
+    particle: 粒子效果
+    force: 强制显示粒子
+    extra: 附加数据
+    main_description: 触发后生成粒子效果
+    effect: 视觉效果
+    particleCount: 粒子效果的数量
+    firingRange: 未使用
+  sound:
+    pitch: 音高
+    main_name: 声音
+    main_description: 播放声音
+    playLocation: 可为 SELF 或 TARGET
+    firingRange: 未使用
+    sound: 播放的声音
+    volume: 音量
+    delay: 延迟 ticks
+  base:
+    isCritical: 条件失败时是否中止当前触发。
+    powerId: Power ID
+    requiredContext: 使用的上下文。
+    display: 技能的提示文字。
+    displayText: 技能的提示文字。
+    id: 此条件/选择器的ID。
+    cost: 技能的耐久消耗量。
+    displayName: 技能的显示名称。
+    cooldown: 技能的冷却时间，以游戏刻为单位。
+    triggers: 技能的触发。
+    powerTags: Power Tags
+    markerId: Marker ID
+    tags: 标签
+    priority: 触发的优先级。
+    conditions: 技能的条件。
+    targetPower: 修改器的目标技能。
+    isStatic: 是否仅在触发开始时测试条件。
+    requireHurtByEntity: Whether only run this power when hurt by entity.
+    selectors: 应用到本技能的选择器。
+    targetProperty: 修改器的目标属性。
+    targetItem: 修改器的目标物品。
+  hit:
+    main_name: Hit
+    minDamage: 最小伤害值
+    main_description: 命中目标时触发主手道具
+    maxDamage: 最大伤害值
+  airborne:
+    main_description: 空中或飞行时造成更多伤害
+    main_name: 空中处决技
+    cap: 该技能所能造成的最高伤害值
+    percentage: 空中或飞行时造成伤害增加的百分比
+    setBaseDamage: 设置为基础值以继续参与后续计算
+  particlebarrier:
+    projected: 是否为投射屏障
+    energyPerLevel: 每级力量效果所需要的能量
+    effect: 屏障的效果
+    main_name: 粒子屏障
+    energyPerBarrier: 满盾能提供的能量
+    barrierHealth: 满盾的生命值
+    main_description: 将受到的攻击转化为效果
+    energyDecay: 能量每秒的衰减
+  potiontick:
+    amplifier: 效果倍率
+    effect: 状态效果
+    interval: 间隔时间，游戏刻
+    duration: 持续时间，游戏刻
+    main_description: 佩戴后按照一定间隔施放状态效果
+    summingUp: 是否堆叠相同类型的药水效果的等级
+    main_name: 佩戴状态效果
+    clear: 清除状态效果而非施放
+  lorefilter:
+    main_description: 保留指定的 Lore
+    desc: 技能的提示文字
+    find: 是否只需要在lore中找到该正则表达式。
+    main_name: Lore 过滤
+    regex: 正则表达式
+  criticalhit:
+    backstabChance: 背刺几率
+    chance: 暴击几率
+    setBaseDamage: 是否设为基础伤害（伤害增益可叠加）
+    main_description: 暴击几率%%让攻击乘以暴击倍率。在背刺情况下，额外背刺几率%%让攻击乘以背刺倍率。
+    factor: 暴击倍率
+    backstabFactor: 背刺倍率
+    main_name: 背刺暴击
+  aoecommand:
+    permission: 执行指令所需的临时权限
+    main_name: 范围命令
+    command: 要执行的命令
+    rm: 最小距离，方块。
+    main_description: 对周围实体执行命令。可使用选择器。
+    range: 有效方块范围。
+    r: 最大距离，方块。
+    c: 实体的最大数量。
+    type: 实体的类型
+    facing: 有效视角，度。
+    selfapplication: 是否应用于触发的玩家。
+    mustsee: 是否必须要看见实体
+  orcondition:
+    main_description: 要求有至少一项满足
+    main_name: Or 条件
+  teleport:
+    distance: 最大距离
+    main_description: 传送到视线方向或者弹射物击中位置
+    main_name: 传送
+    targetMode: 寻找传送点的模式
+  knockup:
+    knockUpPower: 击飞力度
+    main_description: 将目标击飞到空中
+    main_name: 击飞
+    power: 击飞的力度
+    chance: 触发几率， 1/n
+  dummy:
+    checkDurabilityBound: 是否检查物品的耐久边界
+    cooldownKey: 冷却时间的标识
+    main_name: Dummy
+    main_description: 什么都不做（大嘘
+    enchCostPercentage: 附魔影响消耗耐久值的百分比
+    costByDamage: 基于伤害值计算消耗
+    costByEnchantment: 基于附魔计算消耗
+    showCDWarning: 是否显示冷却消息
+    enchantmentType: 用于匹配的附魔类型
+    cooldownResult: 冷却时的结果
+    doEnchReduceCost: 附魔将影响消耗
+    successResult: 成功时的结果
+    globalCooldown: 当前物品所有技能进入全局冷却
+    costResult: 无法消耗耐久时的结果
+  realdamage:
+    main_description: 对目标造成真实伤害但不会杀死它
+    main_name: 真实伤害
+    minDamage: 触发该技能的最小伤害
+    realDamage: 真实伤害量
+  dying:
+    maxDamage: 最大伤害值
+    main_description: 濒死触发
+    main_name: Dying
+    minDamage: 最小伤害值
+  attributemodifier:
+    name: 属性名称
+    uuidMost: UUID 前半部分
+    slot: 物品栏位
+    amount: 数值
+    operation: 操作
+    attribute: 属性
+    main_name: 属性修改
+    uuidLeast: UUID 后半部分
+    main_description: 修改玩家/物品属性
+  attract:
+    attractingEntityTickCost: 吸引时每个实体每刻的耐久消耗。
+    main_name: 吸引
+    firingRange: 尚未使用
+    main_description: 吸引附近的怪物到玩家
+    maxSpeed: 最大速度。
+    attractPlayer: 是否允许吸引玩家。
+    radius: 有效半径。
+    attractingTickCost: 吸引时每刻的耐久消耗。
+    firingLocation: 以 SELF 或 TARGET 为中心
+    duration: 主动触发的持续时间。
+  undead:
+    main_name: 亡灵化
+    main_description: 将玩家变为亡灵生物
+  plusmodifier:
+    main_description: 加算修饰符
+    main_name: Plusmodifier
+    value: 用于加算的值
+  rescue:
+    main_description: 受到过量伤害或者血量即将低于指定值时拯救玩家
+    useBed: 是否回床（而非出生点）
+    inPlace: 是否原地拯救
+    main_name: 拯救
+    damageTrigger: 伤害触发
+    healthTrigger: 血量触发
+  potionself:
+    type: 状态效果
+    main_name: 自身效果
+    main_description: 对自身施放状态效果
+    amplifier: 效果倍率
+    duration: 持续时间，游戏刻
+    summingUp: 是否堆叠相同类型的药水效果的等级
+    clear: 免疫此效果而非应用
+  hurt:
+    minDamage: 最小伤害值
+    maxDamage: 最大伤害值
+    main_description: 受伤（计算完所有护甲等之后）触发
+    main_name: Hurt
+  headshot:
+    soundSelf: 是否显示爆头粒子音效
+    particleEnemy: 是否显示被爆头粒子效果
+    factor: 伤害倍率。造成 factor * damage 伤害
+    setBaseDamage: 是否设为基础伤害（伤害增益可叠加）
+    main_name: 爆头
+    main_description: 弹射物爆头时增加伤害
+    soundEnemy: 是否显示被爆头粒子音效
+  mount:
+    maxDistance: 生物的最远距离
+    main_description: 骑乘生物
+    maxTicks: 最长骑乘时间
+    main_name: 骑乘
+  rumble:
+    main_description: 沿着地面发射冲击波，击飞击中的实体
+    main_name: 裂地猛击
+    power: 击飞力度
+    distance: 最大距离
+    damage: 伤害值
+  rainbow:
+    main_description: 发射彩色羊毛方块
+    isFire: 发射火方块
+    main_name: 彩虹羊毛
+    count: 数量
+  tippedarrow:
+    duration: 持续时间，游戏刻
+    type: 药箭的状态效果
+    amplifier: 效果倍率
+    main_description: 发射药箭
+    main_name: 药箭
+  repair:
+    abortOnFailure: 修理失败时中止后续技能
+    isSneak: 修理时是否需要潜行
+    allowBreak: 是否允许以负耐久修爆物品
+    showFailMsg: 是否显示提示
+    abortOnSuccess: 修理成功后中止后续技能
+    main_name: 修理
+    mode: 是否允许耐久溢出
+    amount: 所需材料数量
+    main_description: 用指定材料修理物品
+    material: 修理用材料
+    customMessage: 材料不足时的自定义提示
+    durability: 修复耐久值
+  consume:
+    isRight: 用于触发技能的鼠标键
+    main_description: 移除一份当前物品。
+    main_name: 消耗
+  evaldamage:
+    display: 显示名称
+    main_description: 根据变量动态计算伤害
+    expression: 计算伤害的表达式
+    main_name: 动态伤害
+    setBaseDamage: 是否设为基础伤害（伤害增益可叠加）
+  gunfu:
+    forceFactor: 力道将影响速度
+    initVelFactor: 初速度倍率
+    main_name: 枪斗术
+    velFactor: 每刻速度改变倍率
+    distance: 最大索敌距离
+    delay: 延迟 ticks 后开始追踪目标
+    main_description: 使弹射物自动追踪敌人
+    maxTicks: 最大追踪时间，游戏刻
+    viewAngle: 最大索敌视角，度
+  explosion:
+    power: 爆炸威力。 4 为 TNT 的爆炸威力
+    main_name: 爆炸
+    explosionPower: 爆炸威力
+    main_description: 制造一个玩家产生的爆炸
+    chance: 触发几率，百分比
+    distance: 最远距离
+  particletick:
+    delay: 延迟 ticks
+    particle: 粒子效果
+    particleCount: 粒子效果的数量
+    playLocation: 可为 SELF 或 TARGET
+    dustSize: 尘埃粒子效果的大小
+    firingRange: 未使用
+    interval: 间隔时间，游戏刻
+    material: 粒子效果的材质
+    dustColor: 尘埃粒子效果的颜色
+    force: 强制显示粒子
+    effect: 视觉效果
+    main_description: 佩戴后按照一定间隔生成粒子效果
+    extra: 附加数据
+    offsetY: Y 偏移
+    offsetZ: Z 偏移
+    offsetX: X 偏移
+    main_name: 佩戴粒子效果
+  aoe:
+    selfapplication: 是否对自身使用。
+    amplifier: 效果倍率。
+    name: 技能的提示文字。
+    range: 有效范围，方块。
+    count: 应用的实体数量
+    angle: 视野角度
+    duration: 持续时间，游戏刻。
+    type: 状态效果。
+    main_description: 对周围实体施放状态效果。可使用选择器。
+    target: 目标类型，ENTITY / PLAYER / MOBS
+    main_name: 范围效果
+  AOEDamage:
+    main_description: 造成一个范围内的伤害
+    main_name: 范围伤害
+  livingentity:
+    main_description: 目标为 LivingEntity 时触发
+    main_name: LivingEntity
+  divmodifier:
+    main_description: 除法修饰符
+    value: 作为分母的值，不可为 0
+    main_name: Divmodifier
+  lightning:
+    main_description: 在击中处降下一道闪电
+    chance: 触发几率，1/n
+    main_name: 闪电
+  aoedamage:
+    main_description: 对一个范围的目标造成伤害
+    incluePlayers: 是否包含玩家
+    selfapplication: 是否应用到自身
+    castOff: 在玩家触发的原位置执行，而非玩家的实际位置
+    firingLocation: 在 SELF 或 TARGET 为中心执行
+    selectAfterDelay: 延迟后再计算目标
+    damage: 伤害值
+    mustsee: 目标必须不被方块阻挡
+    suppressMelee: 是否触发 HIT
+    minrange: 最小选择范围
+    firingRange: 未使用
+    main_name: AOEDamage
+    count: 应用的实体数量
+    angle: 视野角度
+    name: AOEDamage
+    range: 选择范围
+    delay: 延迟 tick
+  slotcondition:
+    slots: 目标栏位
+    main_description: 要求物品放置在正确的物品栏位置
+    critical: 必要条件，如不满足则不在继续检查后续条件直接返回 false
+    main_name: 物品栏条件
+  HIT:
+    main_name: 在击中实体时触发且仅触发主手中的道具
+  sneak:
+    main_name: Sneak
+    main_description: 潜行时触发（一次
+  damagetype:
+    main_description: 一个用于匹配的字符串，一般用在职业系统中
+    damageType: 伤害类型字符串，例如 melee 或 ranged
+    main_name: Damage Type
+  translocator:
+    main_description: 投掷信标，之后传送到信标位置
+    tpCost: 传送所需消耗
+    speed: 投掷速度
+    setupCost: 建立信标所需消耗
+    main_name: 传送信标
+  cancelbowarrow:
+    cancelArrow: true 或 false
+    main_name: 取消箭矢
+    main_description: 弓在发射时不会发射出箭矢
+  evalcondition:
+    main_name: 动态条件
+    expression: 计算条件结果的表达式
+    main_description: 根据变量动态计算结果
+  pumpkin:
+    chance: 触发几率，百分比
+    main_name: 南瓜头
+    drop: 南瓜头掉落几率
+    main_description: 攻击僵尸或者骷髅时给他们戴上南瓜头
+  rangedonly:
+    main_name: 仅远程攻击
+    main_description: 标记武器仅能远程攻击
+    rm: 最小距离
+    r: 最大距离
+  enchantedhit:
+    enchantmentType: 附魔类型
+    setBaseDamage: 设置为基础伤害值以参与后续计算
+    main_name: 附魔攻击
+    amountPerLevel: 每等级的计算数值
+    mode: ADDITION 或 MULTIPLICATION
+    main_description: 用指定的附魔来影响物品的伤害
+  equipmentcondition:
+    rpgitem: 玩家需要装备的 RPGItem
+    main_name: 装备条件
+    material: 玩家需要装备的材质
+    itemStack: 玩家需要装备的物品
+    main_description: 要求玩家穿特定装备
+    matchAllSlot: 是否要求所有装备栏匹配
+    requireEmpty: 匹配空槽
+    slots: 装备栏
+  color:
+    wool: 暂时不可用
+    main_name: 颜色
+    glass: 暂时不可用
+    clay: 暂时不可用
+    main_description: 暂时不可用
+  tick_offhand:
+    main_name: Tick Offhand
+    main_description: 每 tick 触发副手物品
+  mythicskillcast:
+    skill: 技能名
+    main_description: 施放MythicMobs技能
+  offhand_click:
+    main_name: Offhand Click
+    main_description: 点击时触发副手道具
+  fireball:
+    main_description: 发射一个火球
+    main_name: 火球
+  tick:
+    main_description: 每 tick 触发主手物品
+    main_name: Tick
+  charge:
+    main_name: 勇气绝杀
+    percentage: 冲刺时伤害提升的比例
+    cap: 最大伤害
+    speedPercentage: 速度高于默认速度时，每一倍速度的伤害提升
+    main_description: 冲刺时增加伤害
+    setBaseDamage: 设置为基础伤害值以参与后续计算
+  mulmodifier:
+    main_description: 乘算修饰符
+    main_name: Mulmodifier
+    value: 用于乘算的值
+  shulkerbullet:
+    range: 索敌范围
+    main_description: 发射一枚潜影子弹，
+    main_name: 潜影子弹
+  stuck:
+    costAoe: 范围定身触发消耗
+    cost: 击中实体定身的消耗
+    range: 范围定身的范围
+    duration: 持续时间
+    chance: 触发几率，1/n
+    main_description: 定身目标
+    costPerEntity: 范围定身每个实体的消耗
+    facing: 定身最大视角
+    main_name: 定身
+  food:
+    foodpoints: 饱食度
+    main_description: 食用后回复饱食度
+    main_name: 食用
+  bow_shoot:
+    main_name: Bow shoot
+    maxForce: 最大力道
+    minForce: 最小力道
+    main_description: 射箭时触发
+  beam_end:
+    main_description: 粒子光束结束时触发
+    main_name: Beam end
+  placeholdercondition:
+    main_description: PlaceholderAPI变量条件
+    value: 比较的目标
+    operator: 操作符,可为==,!=,===(忽略大小写),!==(忽略大小写),>,>=,<,<=,contain(s),!contain(s),startwith,endwith,match(es),!match(es)
+    placeholder: 用于比较的内容
+  economy:
+    main_name: 经济
+    main_description: 向玩家付款或扣款
+    abortOnFailure: 失败时中止
+    showFailMessage: 失败时显示经济插件的消息
+    amountToPlayer: 向玩家支付的数量（可为负）
+  torch:
+    main_description: 投掷火把点亮区域
+    main_name: 火把
+  fire:
+    burnduration: 火焰持续时间
+    main_description: 发射一个火焰方块，点燃击中的实体
+    main_name: 喷火
+    distance: 最远有效距离
+  ATTACHMENT:
+    main_name: 配件触发
+  projectile_hit:
+    main_name: Projectile Hit
+    main_description: 弹射物命中时触发
+  consumehit:
+    main_description: 击中目标时移除一份当前物品。
+    main_name: 击中消耗
+  scoreboardcondition:
+    main_description: 玩家的计分板需满足的条件
+    main_name: 计分板条件
+    team: 计分板队伍，`MUST_ON,!MUST_NOT_ON`
+    tag: 计分板标签，`MUST_HAVE,!MUST_NOT_HAVE`
+    score: 计分板分数范围，`score_name:min,max another_score_name:min,max`
+  swap_to_offhand:
+    main_description: 切换物品到副手时触发
+    main_name: Swap to offhand
+  sneaking:
+    main_description: 潜行时触发（每 tick
+    main_name: Sneaking
+  swap_to_mainhand:
+    main_name: Swap to Mainhand
+    main_description: 切换物品到主手时触发
+  commandhit:
+    minDamage: 触发最小的伤害
+    command: 执行的命令
+    main_name: 击中命令
+    main_description: 击中目标时执行一条命令。
+    permission: 执行指令所需的临时权限
+  flame:
+    main_description: 点燃被击中的目标
+    burntime: 火焰持续时间
+    main_name: 火焰附加
+  projectile_launch:
+    main_name: Projectile Launch
+    main_description: 弹射物发射时触发
+  ice:
+    main_name: 冰冻
+    main_description: 发射一个冰方块，在击中处生成一个大冰块
+  selector:
+    x: X坐标基准位置，可用波浪线
+    y: Y坐标基准位置，可用波浪线
+    z: Z坐标基准位置，可用波浪线
+    r: 距基准位置最长距离
+    score: 计分板分数范围，`score_name:min,max another_score_name:min,max`
+    type: 目标实体类型
+    main_name: 选择器
+    team: 计分板队伍，`MUST_ON,!MUST_NOT_ON`
+    main_description: 对AOE技能的选择器
+    tag: 计分板标签，`MUST_HAVE,!MUST_NOT_HAVE`
+    rm: 距基准位置最短距离
+    count: 目标实体最大数量
+    id: 选择器的 ID，应在物品上唯一
+    dz: 距基准位置最大z轴偏移量
+    dy: 距基准位置最大y轴偏移量
+    dx: 距基准位置最大x轴偏移量
+    gameMode: 玩家游戏模式
+  evalmodifier:
+    main_name: Evalmodifier
+    expression: 表达式
+    main_description: 表达式修饰符
+  ranged:
+    r: 最大距离
+    rm: 最小距离
+    main_name: 远程攻击
+    main_description: 标记武器能远程攻击
+  hit_global:
+    main_name: Hit Global
+    minDamage: 最小伤害值
+    main_description: 命中目标时触发主手之外的道具（副手、背包等
+    maxDamage: 最大伤害值
+  unbreakable:
+    main_name: 无法破坏
+    main_description: 标记该物品为不可破坏
+  place_off_hand:
+    main_description: 副手放置触发
+    main_name: Place Offhand
+  mending:
+    requireEnchantment: 是否需要物品有经验修补附魔才能修复装备
+    main_name: 经验修补
+    repairFactor: 每点经验能修复多少耐久
+    main_description: 拾取经验时修复物品
+  lastresultcondition:
+    main_name: 结果条件
+    okResults: 允许的结果
+    main_description: 要求上一个执行的技能返回特定的结果
+    failOnNoResult: 是否在不存在上一个执行的技能时失败
+  pickup_off_hand:
+    main_description: 副手捡拾触发
+    main_name: Pickup Offhand
+  left_click:
+    main_description: 左键点击触发
+    main_name: Left Click
+  throw:
+    entityData: 实体 NBT 数据
+    main_name: 投掷实体
+    main_description: 生成并投掷实体
+    isPersistent: 实体是否保留在世界存档
+    entityName: 实体名称
+    speed: 投掷速度
+  andcondition:
+    main_name: And 条件
+    main_description: 要求所有条件满足
+  location:
+    main_description: 在特定位置触发
+    main_name: Location
+  forcefield:
+    main_description: 在玩家周围用屏障生成一个力场护盾
+    base: 护盾的地基
+    height: 护盾的高度
+    ttl: 护盾的持续时间
+    radius: 护盾的半径
+    main_name: 力场护盾
+  potionhit:
+    duration: 持续时间，游戏刻
+    main_name: 击中效果
+    summingUp: 是否堆叠相同类型的药水效果的等级
+    amplifier: 效果倍率
+    chance: 触发几率，1/n
+    main_description: 击中后对目标施放状态效果
+    type: 状态效果
+  unique:
+    enabled: 是否启用
+    main_name: 独特标志
+    main_description: 给物品一个独一无二的标志
+  attachment:
+    main_name: ATTACHMENT
+    main_description: 触发背包中的附件物品
+  lifesteal:
+    main_description: 按造成的攻击伤害回血
+    main_name: 吸血
+    factor: 吸血量的系数
+    chance: 触发几率，百分比
+  hit_taken:
+    maxDamage: 最大伤害值
+    main_description: 受伤（在开始计算护甲等之前）触发
+    main_name: Hit Taken
+    minDamage: 最小伤害值
+  command:
+    main_description: 执行一条命令。
+    command: 执行的命令
+    permission: 执行指令所需的临时权限
+    main_name: 命令
+  xorcondition:
+    main_name: XOR 条件
+    init: 初始值
+    main_description: 要求所有条件结果的异或值为真
+  durabilitycondition:
+    main_name: 耐久条件
+    main_description: 要求耐久在一定范围内
+    durabilityMin: 耐久需大于该值
+    durabilityMax: 耐久需小于该值
+  deathcommand:
+    main_description: 以 1/chance 的几率杀死目标并执行命令
+    chance: 触发几率， 1/n
+    desc: 技能的提示文字
+    count: 执行命令的次数
+    command: 执行的命令
+    main_name: 即死命令
+  glove:
+    main_description: 捕获一个实体
+    throwSpeed: 捕获结束后实体投掷速度
+    main_name: 鬼手
+    maxTicks: 捕获的最长时间
+    maxDistance: 最大距离
+  chancecondition:
+    main_name: 概率条件
+    main_description: 一定概率成功的条件
+    chancePercentage: 成功率
+  right_click:
+    main_name: Right Click
+    main_description: 右键点击触发
+  sprint:
+    main_name: Sprint
+    main_description: 冲刺时触发（一次
+  damageType:
+    main_description: 要求造成的伤害类型与条件满足
+    main_name: 伤害类型条件
+  DYING:
+    main_name: 在即将死亡时触发
+  HIT_GLOBAL:
+    main_name: 在击中实体时触发，会触发除主手外所有在背包中的道具
+  BOW_SHOOT:
+    main_name: 在弓发射时触发
+  BEAM_END:
+    main_name: 在粒子束消失的时候触发
+  arrow:
+    main_name: 射出一矢
+    main_description: 发射一支箭。
+power:
+  undead: 将你转化为亡灵生物
+  food: 回复 %d 点饥饿值
+  shulkerbullet: 发射潜影贝子弹 (%.1f 秒冷却时间)
+  glove: 捕获一个实体 (%.1fs 冷却)
+  consume: 使用后消耗掉
+  stuck: 攻击后 %d 几率敌人无法移动 %d tick (%.1f 秒冷却时间)
+  airborne: 攻击在滑翔时增加 %d%%
+  rescue:
+    info: 你已被拯救。
+    display: 当生命值低于 %.1f 颗心时施展拯救技能 (%.1f秒冷却)
+  projectile:
+    display: 右键发射 `%s` (%.1f秒冷却)
+    cone: 右键发射一堆 `%s` (%.1f秒冷却)
+    noFireball: 火焰弹无法应用于圆锥机制。
+  potiontick:
+    display: 持有/穿戴时给予效果 %s %d
+    clear: 持有/穿戴时清除效果 %s
+  tippedarrow: 发射 %s %d 持续 %.1f 秒的药箭 (%.1f 秒冷却)
+  translocator: 切副手发射传送信标，切主手传送至信标，从副手拿出拆除信标 (%.1f 秒冷却时间)
+  pumpkin: 1/%d 几率使敌人戴上南瓜头
+  beam: 发射粒子束攻击敌人
+  aoe:
+    display: 附加 %s  (级别 %d ) 效果，时间为 %d 单位，作用物品：%s，作用范围：%d 格方块，冷却时间：%.1f秒
+    selfapplication:
+      including: 排除自身
+      excluding: 包含自身
+  gunfu: 子弹会自动追踪敌人 (%.1fs cooldown)
+  unbreakable: 不毁
+  particletick: 持有时产生一些粒子
+  potionself: 获得 %s %d 持续 %.1f 秒
+  torch: 照亮一片区域 (%.1f 秒冷却时间)
+  selector: 仅对部分实体有效
+  lifesteal: 1/%d 的几率偷取敌人生命值
+  unbreaking: 耐久 %d
+  mount: 骑乘一个实体 (%.1fs 冷却)
+  charge: 攻击随速度增加，并在疾跑时增加 %d%%
+  mythicskillcast: 施放MythicMobs的 %s 技能 (%.1f 秒冷却时间)
+  knockup: '%d%% 的几率击飞目标'
+  explosion: 百分之 %.1f 的概率制造一个强度为 %.1f 的爆炸
+  rangedonly: 仅远程使用
+  economy:
+    withdraw: 支付 %s (%.1fs cooldown)
+    deposit: 获得 %s (%.1fs cooldown)
+  mending: 拾取经验时修复物品耐久，每点经验可修复 %.1f 耐久
+  tntcannon: 发射 TNT (%.1f 秒冷却时间)
+  potionhit: '%d%% 的几率触发 %s 效果 %d 级 %.1f 秒'
+  arrow: 发射火箭 (%.1f 秒冷却时间)
+  rainbow: 发射 %d 彩色羊毛 (%.1f 秒冷却)
+  teleport: 传送 %d 格 (%.1f 秒冷却)
+  ice: 发射冰块 (%.1f 秒冷却时间)
+  consumehit: 击中后消耗掉
+  criticalhit:
+    backstab: 百分之 %.1f 的几率背刺 %.1f 倍
+    both: 百分之 %.1f 的几率暴击 %.1f 倍，百分之 %.1f 的几率背刺 %.1f 倍
+    critical: 百分之 %.1f 的几率暴击 %.1f 倍
+  particle: 右键时产生一些粒子
+  noimmutabletick: 取消攻击后敌方的无敌时间
+  forcefield: 在你周围设置一个半径 %d，高度 %d，深度 %d 并持续 %.1f秒的力场
+  rumble: 发出冲击波 (%.1f 秒冷却时间)
+  skyhook: 钩到指定方块
+  deathcommand: 1/%d 几率杀死敌人然后 %s
+  lightning: '%d%% 的几率发生雷击'
+  attract: 爆发吧，小宇(黑)宙(洞)！
+  realdamage: 攻击后对敌人造成 %.1f 真实伤害.
+  ranged: 可远程使用
+  deflect: 反弹射来的箭与火球
+  fireball: 发射火球 (%.1f 秒冷却时间)
+  fire: 发射火焰 (%.1f 秒冷却时间)
+  color: 改变粘土，玻璃和羊毛的颜色 (%.1f秒冷却)
+  flame: 点燃目标 %.1f 秒
+  headshot: 爆头时造成 %.1f 倍伤害
+command:
+  list:
+    power_per_page: 每页列出的技能
+    item_per_page: 每页列出的物品
+  template:
+    placeholder:
+      bad_placeholder: 无效占位符 %s
+      itemName: 物品名：%s
+      info: 已添加的技能占位符：%s
+      remove:
+        success: 已为模板 %s 移除技能占位符
+      not_template: 物品 %s 不是一个有效模板
+      add:
+        success: 已为模板 %s 创建技能占位符 %s
+    not_template: 物品 %s 不是一个有效模板
+    apply:
+      success: 已为以 %s 为模板的物品应用属性
+    delete:
+      success: 成功删除模板 %s
+    create:
+      success: 成功以物品 %s 创建模板
+    bad_placeholder: 无效的占位符：%s
+  meta:
+    quality:
+      warn_quality_not_exists: 品质不存在：%s
+internal:
+  error:
+    no_more_bool: 还需要类型为布尔值的参数
+    command_exception: 命令出错 %s
+    bad_int: 错误的整数 %s
+    no_more_string: 还需要类型为字符串的参数
+    no_more_enum: 还需要类型为枚举的参数
+    bad_double: 错误的小数 %s
+    no_more_int: 还需要类型为整数的参数
+    bad_enum: '枚举项错误，只支持类型为 %s 中的以下项: %s'
+  info:
+    usage_prompt: 使用方法：%s
+item:
+  additionaldamage: 附加 %s 伤害
+  multiplydamage: '%s 倍伤害'
+  damage: '%s 伤害'
+  armour: 护甲

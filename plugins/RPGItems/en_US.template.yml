@@ -1,0 +1,1588 @@
+message:
+  translocator: '%s''s Translocator'
+  barformat:
+    numeric: Durability bar set to numeric
+    numeric_hex_minus_one: Durability bar set to numeric minus one
+    numeric_bin: Durability bar set to binary numeric
+    numeric_bin_minus_one: Durability bar set to binary numeric minus one
+    numeric_hex: Durability bar set to hex numeric
+    numeric_minus_one: Durability bar set to hex numeric minus one
+    default: Durability bar set to default (box char)
+  import:
+    gist:
+      timeout: Gist download timeout
+      failed: Gist download failed
+      code: 'Gist download failed: %d'
+      ing: Importing item(s) from Gist
+      ed: Gist imported successfully
+      notfound: Gist https://gist.github.com/%s not found
+    success: 'Item %s (UID: %d) imported successfully'
+    not_supported: Import from %s is not supported
+    url:
+      code: 'Url download failed: %d'
+      ed: Url imported successfully
+      failed: Url download failed
+      notfound: Url %s not found
+      ing: Importing item from url
+      timeout: Url download timeout
+    conflict_name: 'Item to import has a name conflict: ''%s'' , please specify a
+      replacement with <old_name>:<new_name> in command'
+    invalid_conf: 'Item configuration is invalid: %s'
+    conflict_uid: 'Item to import ''%s'' has same UID with ''%s'': %d , please check
+      if you already have it.'
+  enchantmode:
+    permission: Item '%s' enchant mode set to requiring permission (rpgitem.enchant.[item
+      name])
+    allow: Item '%s' enchant mode set to allow all enchant
+    disallow: Item '%s' enchant mode set to disallowing custom enchant (default)
+  armour:
+    get: Item '%s' armour is '%d%%'
+    set: Item '%s' armour set to '%d%%'
+  command:
+    usage: 'Command usage for: /%s (%s)'
+    info: More detailed help on http://rpgitems2.webs.com/ or /rpgitem help [terms]
+  error:
+    invalid_option: '%s is not a valid option for %s. Available: %s'
+    item: Unknown item '%s'
+    only:
+      player: This command can only be used by players
+    file_not_exists: 'File not exist: %s'
+    recovering: Error recovering %s from %s, %s. We suggest you stop the server and
+      check item files and backups manually.
+    invalid_regex: Invalid regex
+    permission: You do not have permission for '%s'
+    double:
+      limit: Number must be between %.2f and %.2f
+      format: '''%s'' is not a double'
+    string:
+      length: '''%s'' in longer than max length %d'
+    damagetolarge: 'Damage TOO large. MAX: 32767'
+    command:
+      format: Display text and command must be seperated by a |
+    integer:
+      limit: Number must be between %d and %d
+      format: '''%s'' is not a integer'
+    player: Cannot find player %s
+    reloading_locked: Cannot reload a item that is locked! Use `/rpgitem backupitem`
+      to backup and unlock it first.
+    unknown:
+      command: 'Error: Unknown command %s'
+      extension: 'Unknown extension: %s'
+    iteminhand: No item in your hand
+    need_material: You need a %s to repair this item
+    invalid_enchant: Invalid Enchant %s
+    material: Unknown material '%s'
+    invalid_command_arg: 'Failed to load power: %s, %s'
+    legacy_name: '%s now have a new name in Spigot 1.13+: %s'
+    verifying: |-
+      §c§lError verifying integrity for %s.
+      §c§lWe suggest you stop the server and check item files and backups manually and file a issue with you console log to us, thanks.
+      §e%s
+    effect: '%s is not a valid effect'
+    invalid_expression: Invalid Expression %s
+    economy: No economy provider found
+    item_unlocked: You cannot edit unlocked %s. Reload it before editing.
+    visualeffect: 'Not a valid visual effect: %s'
+    loading: Error loading item from %s. %s
+    option: Invalid option '%s'
+  enchantment:
+    fail: FAIL
+    empty_ench: This item has an empty enchantment list
+    removed: Attached enchantments removed
+    bad_ench: 'Invalid enchantment: %s'
+    no_such_ench: This item doesn't contain such enchantment
+    item: Enchantment:%s Level:%d
+    no_ench: No attached enchantments
+    success: Successfully added enchantment(s)
+    listing: Listing attached enchantments for item %s
+  durability:
+    info: 'Durability Max: %d, Default: %d, Lower %d, Upper %d'
+    toggle: Durability bar toggled
+    default: Default durability set to %s
+    bound: Durability lower and upper bound set to %s and %s
+    max_and_default: Max and default durability set to %s
+  trigger:
+    not_found: No trigger found for %s
+    ok: Trigger %s added
+    change: Trigger changed
+    key: §3§lTrigger '§r%s§3§l'
+    description: '§3§lDescription: ''§r%s'''
+    unknown: Unknown trigger %s
+    removed: Trigger %s removed
+    show: 'Trigger %s - base %s (%s): %s'
+    unknown_base: 'Unknown base trigger %s. Available: %s'
+  item:
+    author:
+      set: Author of item %s set to {author}
+      na: Author of item %s unknown
+      get: Author of item %s is {author}
+    file_deleted: Item file deleted
+    no_backup: Backup for %s not found.
+    print: '{itemName}'
+    load: Loaded item %s {item}
+    license:
+      set: |-
+        License of item %s set to:
+        %s
+      na: License of item %s unknown
+      get: |-
+        License of item %s is:
+        %s
+    cant:
+      find: Cannot find item
+    note:
+      na: No note available for item %s
+      set: |-
+        Not of item %s set to:
+        %s
+      get: |-
+        Note of item %s is:
+        %s
+    get: 'Item ''%s'' item is {itemName} (%s): %d '
+    unlocked: Item %s unlocked. Backed up to %s.
+    empty_dir: Skipping empty directory %s
+    list: '%s - {item}'
+    cleanbackup: Cleaned up backup dictory.
+    dump: |-
+      Item %s:
+
+      %s
+    backedup: Item %s backed up to %s.
+    recovering: Failed when reloading, recovering. Your edits saved to %s
+    set: 'Item ''%s'' item set to {itemName} (%s): %d '
+    power: 'Power %d %s (%s): %s §r[%s]'
+  itemflag:
+    remove: ItemFlag %s removed
+    notfound: ItemFlag %s does not exists
+    add: Added ItemFlag %s
+  spu:
+    entity:
+      updated: '%s §rEntity updated: %s -> %s'
+      code: '%s §rEntity update failed: %d, %s %s'
+      failed: '%s §rEntity update failed: %s %s'
+      timeout: '%s §rEntity update timeout'
+    command:
+      timeout: '%s §rCommand update timeout'
+      warn: 'Warn: %s'
+      failed: "%s §rCommand update failed: %s\n%s "
+      updated: |-
+        %s §rCommand updated:
+        %s ->
+        %s
+      code: "%s §rCommand update failed: %d, %s\n%s "
+    no_endpoint: SPU endpoint not set
+    finish: Data update finished
+  group:
+    note: 'Note: %s'
+    removed: Item group %s removed
+    header: Item group %s (%d items)
+  propertyHolder:
+    description: §3§l-| §r%s
+    property_value: §b-| §r%s
+    no_description: §7No description yet
+    property: '§b-| %s: §r%s'
+    required: 'Missing required argument: %s'
+  cost:
+    change: cost set
+    get: cost %d durability
+    hit_toggle:
+      disable: cost on being hit set to fixed value
+      enable: cost on being hit set to percentage of damage
+  model:
+    is: This is a model item
+    to: Modelled item
+  marker:
+    description: '§3§lDescription: ''§r%s'''
+    removed: Marker %s removed
+    show: 'Marker %s (%s): %s'
+    ok: Marker %s added
+    change: Item's marker property has been changed
+    key: §3§lMarker '§r%s§3§l'
+    no_display: Marker has no display text
+    not_found: No marker found for %s
+    unknown: Unknown marker %s
+  type:
+    set: Item '%s' type set to '%s'
+    get: Item '%s' type is '%s'
+  damagemode:
+    fixed: Item '%s' damage mode set to fixed damage (default)
+    vanilla: Item '%s' damage mode set to vanilla damage (use vanilla minecraft damage)
+    multiply: Item '%s' damage mode set to multiply damage (vanilla minecraft damage
+      multiply by RPGItem damage)
+    additional: Item '%s' damage mode set to additional damage (vanilla minecraft
+      damage plus RPGItem damage)
+  customitemmodel:
+    enable: Custom item model enabled
+    disable: Custom item model disabled
+  property:
+    required: The power need these properties %s
+  damage:
+    set:
+      value: Item '%s' damage set to %d
+      range: Item '%s' damage set to %d-%d
+    get: Item '%s' damage is %d-%d
+  worldguard:
+    override:
+      disabled: Worldguard override disabled
+      active: Worldguard override active
+    enable: Worldguard support enabled
+    disable: Worldguard support disabled
+    error: No Worldguard plugin found
+  remove:
+    ok: Item '%s' removed
+  armor_expression:
+    set: Armor Expression set to %s
+  modifier:
+    removed: Modifier %s removed
+    ok: Modifier %s added
+    not_found: No modifier found for %s
+    show: 'Modifier %s - %s (%s): %s'
+    key: §3§lModifier '§r%s§3§l'
+    change: Item's modifier property has been changed
+    remove: Modifier removed
+    unknown: Unknown modifier %s
+    description: '§3§lDescription: ''§r%s'''
+  power:
+    ignored_trigger: Ignoring unknown trigger %s on power %s for item %s
+    no_display: No display text
+    unknown: Unknown power %s
+    reorder: Reordered power %s to %d
+    removed: Power %s removed at  %d
+    description: '§3§lDescription: ''§r%s'''
+    key: §3§lPower '§r%s§3§l'
+    change: Item's power property has been changed
+    ok: Power %s added at %d
+    no_description: No Description available
+    show: 'Power %d - %s (%s): %s §r[%s]'
+    not_found: No power found for %s
+  power_property:
+    change: Property set
+    all: |-
+      %d th power '%s''s properties:
+      %s
+    property_unsupporttype: '''%s'' if of type other than int/double/String/boolean'
+    not_vaild_int: '''%s'' is not an valid integer'
+    not_vaild_bool: '''%s'' is not an valid boolean'
+    power_notfound: Power %s %d not found on this item
+    property_notfound: Unknown property  %s
+    get: '%d th power ''%s''''s property %s is %s'
+  toggleLore:
+    show: Lore now been displayed
+    hide: Lore now been hid
+  line_separator: ' '
+  hand:
+    set: Item '%s' hand set to '%s'
+    get: Item '%s' hand is '%s'
+  wgforcerefresh:
+    disable: Worldguard custom flag force refresh disabled
+    enable: Worldguard custom flag force refresh enabled
+  color:
+    next: '%s Changed paint!'
+  print:
+    durability: 'Max durability: %d'
+    license: 'License: %s'
+    note: 'Note: %s'
+    itemflags: 'ItemFlags: '
+    author: 'Author: {author}'
+    customitemmodel: 'Custom item model: %s'
+  give:
+    ok: You were given %s
+    to: Gave %s to %s
+    console: Cannot give console items
+  description:
+    remove: Removed line
+    ok: Added line
+    change: Changed line
+  condition:
+    not_found: No condition found for %s
+    show: 'Condition %s - %s (%s): %s'
+    change: Item's condition property has been changed
+    removed: Condition %s removed
+    changed: Item's condition property has been changed
+    description: '§3§lDescription: ''§r%s'''
+    unknown: Unknown condition %s
+    key: §3§lCondition '§r%s§3§l'
+    ok: Condition %s added
+  lore:
+    get: Item '%s' lore is '%s'
+    set: Item '%s' lore set to '%s'
+  update:
+    fail: 'Failed updating Item %s: %s, check console for more detail'
+    success: Successfully updated Item {item}
+  display:
+    get: Item '%s' display name is '%s'
+    set: Item '%s' display name set to '%s'
+  cooldown:
+    general: You must wait %.1f seconds before using %s
+    power: You must wait %.1f seconds before using %s§r's %s
+  export:
+    gist:
+      token: Please specify Gist Token in command like 'token:<token>' or add 'githubToken:<token>'
+        to config
+      ed: Gist exported successfully at https://gist.github.com/%s
+      failed: Gist upload failed
+      code: 'Gist upload failed: %d'
+      timeout: Gist upload timeout
+    not_supported: Export to %s is not supported
+  wgcustomflag:
+    enable: Worldguard custom flag enabled
+    disable: Worldguard custom flag disabled
+  damagetype:
+    set: Damage Type set to %s
+  permission:
+    success: Permission restriction successfully set !
+    booleanerror: Enabled must be boolean ! (true or false)
+  skyhook:
+    fail: You failed to hook anything
+  no_item: No item.
+  attributemode:
+    set: item {itemName} 's attribute mode set to %s
+  help:
+    for: Showing help for '%s'
+  create:
+    ok: Item '%s' created
+    fail: An item with that name already exists
+  num_out_of_range: '%d is out of range (%d, %d]'
+  cloneitem:
+    success: Successfully cloned item %s as %s
+    fail: 'Failed to clone item %s : %s already exists'
+  stuck: You are stuck and cannot teleport!
+  custom_model_data:
+    set: Item's custom model data has been set to %s
+  giveperms:
+    canceled: Give now does not require permissions
+    required: Give now requires permissions
+  too:
+    far: It landed too far away...
+  version: |-
+    RPGItem v%s ({GIT_BRANCH} branch, {GIT_HASH})
+
+    Copyright © 2021 NyaaCat Developers
+    Copyright © 2013 TheCreeperOfRedstone
+    License MIT
+
+    Report Bugs At: https://github.com/NyaaCat/RPGItems-reloaded/issues
+manual:
+  damage:
+    usage: /rpgitem damage {item} [option]
+    description: |-
+      Show/set item damage value. Available options:
+      [value] - Set damage to a fixed value. /rpgitem test_item damage 15
+      [min] [max] - Set damage to a random value in a range. /rpgitem test_item damage 10 20
+  give:
+    description: Gives the item to the user of the command or a player
+    usage: /rpgitem give {item} [player]
+  condition:
+    description: Set condition for an item.
+    remove:
+      usage: /rpgitem power remove {item} <properties>
+      description: Remove a condition from an item
+    usage: /rpgitem condition [option] {item} <condition> <properties> [optionalProperties]
+    prop:
+      usage: /rpgitem power prop {item} <properties> [optionalProperties]
+      description: Display/change the item's condition
+    list:
+      usage: /rpgitem power list
+      description: List all conditions
+    help:
+      description: Show help of condition command
+      usage: /rpgitem power [help]
+    add:
+      description: Add condition to an item
+      usage: /rpgitem power add {item} <properties> [optionalProperties]
+  remove:
+    usage: /rpgitem remove {item}
+    description: Remove the item from plugin
+  template:
+    delete:
+      usage: /rpgitem template delete {item}
+      description: Delete specific template
+    usage: /rpgitem template [option]
+    help:
+      usage: /rpgitem template [help]
+      description: Show help message for template
+    create:
+      description: Create a template with item
+      usage: /rpgitem template create {item}
+    apply:
+      usage: /rpgitem template apply {item}
+      description: Apply the template to items.
+    placeholder:
+      usage: /rpgitem template placeholder <option> {item} <powerId:property>
+      description: Set power placeholder for template. Set power properties will not
+        change when applying template
+    description: Set an item template.
+  description:
+    description: Add/remove or replace text to item description/lore. Formatting codes
+      are supported with § symbol. Line number starts from 0.
+    usage: /rpgitem description {item} <add <value>|set <line> <value>| remove <line>>
+  reorder:
+    description: Change item's power
+    usage: /rpgitem power reorder {item} <power> <power>
+  command:
+    template:
+      placeholder:
+        bad_placeholder: Invalid placeholder %s
+        add:
+          success: Added placeholder to template %s
+        info: 'Placeholder info: %s'
+        not_template: Item %s is not a valid template.
+        itemName: 'Item: %s'
+        remove:
+          success: Removed placeholder from template %s
+      create:
+        success: Successfully created template with item %s .
+      not_template: Item %s is not a valid template.
+      apply:
+        success: The template %s has been applied to items.
+      delete:
+        success: Delete the template %s
+  power:
+    remove:
+      description: Remove a power from an item
+      usage: /rpgitem power remove {item} <properties>
+    usage: /rpgitem power [option] {item} <power> <properties> [optionalProperties]
+    help:
+      description: Show help of power command
+      usage: /rpgitem power [help]
+    add:
+      description: Add power to an item
+      usage: /rpgitem power add {item} <properties> [optionalProperties]
+    prop:
+      description: Display/change the item's power
+      usage: /rpgitem power prop {item} <properties> [optionalProperties]
+    list:
+      description: List all powers
+      usage: /rpgitem power list
+    description: Set power for an item.
+  removefromgroup:
+    usage: /rpgitem removefromegroup {item} {group}
+    description: Remove an item from the item group.
+  create:
+    usage: /rpgitem create <name>
+    description: Create item with specified name
+  export:
+    usage: /rpgitem export {item} <gist>
+    description: Export a specific item to Gist.
+  apply:
+    usage: /rpgitem template apply {item}
+    description: Apply the template to items.
+    placeholder:
+      usage: /rpgitem template placeholder <option> {item} <powerId:property>
+      description: Set powers placeholder of the template,the parameters specified
+        by the placeholder will not change when template is applied.
+    delete:
+      usage: /rpgitem template delete {item}
+      description: Delete specific template.
+  marker:
+    usage: /rpgitem marker [option] {item} <properties> [optionalProperties]
+    remove:
+      usage: /rpgitem power remove {item} <properties>
+      description: Remove a marker from an item
+    add:
+      description: Add marker to an item
+      usage: /rpgitem power add {item} <properties> [optionalProperties]
+    description: Set marker for an item.
+    help:
+      usage: /rpgitem power [help]
+      description: Show help of marker command
+    prop:
+      description: Display/change the item's marker
+      usage: /rpgitem power prop {item} <properties> [optionalProperties]
+    list:
+      description: List all markers
+      usage: /rpgitem power list
+  removegroup:
+    description: Remove an item group.
+    usage: /rpgitem removegroup {group}
+  customModel:
+    description: Set item's custom model ID.
+    usage: /rpgitem customModel {item} <value>
+  damageType:
+    description: Set item's damagetype.
+    usage: /rpgitem damageType {item} <value>
+  modifier:
+    description: Set marker for an item.
+    help:
+      usage: /rpgitem power [help]
+      description: Show help of modifier command
+    remove:
+      description: Remove a modifier from an item
+      usage: /rpgitem power remove {item} <properties>
+    list:
+      description: List all modifiers
+      usage: /rpgitem power list
+    add:
+      description: Add modifier to an item
+      usage: /rpgitem power add {item} <properties> [optionalProperties]
+    prop:
+      usage: /rpgitem power prop {item} <properties> [optionalProperties]
+      description: Display/change the item's modifier
+    usage: /rpgitem marker [option] {item} <properties> [optionalProperties]
+  durability:
+    usage: /rpgitem durability {item} <option>
+    description: |-
+      Show/set item durability maximum/default value or other option.
+      Available options:
+        [value] - Set maximum durability to value - /rpgitem test_item durability 100
+        infinite - Set durability to infinite - /rpgitem test_item durability infinite
+        default - Set default durability to value - /rpgitem test_item durability default 100
+        togglebar - Set durability bar to show/hide - /rpgitem test_item durability togglebar
+        bound - Set item durability lower and upper bounds - /rpgitem test_item durability bound 10 100
+  note:
+    description: Set an item's information.
+    usage: /rpgitem note {item} <value>
+  license:
+    usage: /rpgitem lisence {item}
+    description: Display the lisence of item.
+  removeitemflag:
+    description: Remove item flag
+    usage: /rpgitem removeitemflag {item} <itemflag>
+  clone:
+    usage: /rpgitem clone {item} <newItem>
+    description: Clone item as new item
+  wgforcerefresh:
+    description: Toggles worldguard force refresh.
+    usage: /rpgitem wgforcerefresh
+  print:
+    description: Print item status
+    usage: /rpgitem print {item}
+  permission:
+    usage: /rpgitem permission {item} <permission> <true|false>
+    description: Set item permission
+  loadfile:
+    usage: /rpgitem loadfile {file}
+    description: Load an item from local file.
+  creategroup:
+    usage: /rpgitem creategroup <group>
+    description: Create a RPGItems Group
+  armour:
+    description: Show/set item armour
+    usage: /rpgitem armour {item} [value]
+  attributemode:
+    description: Set an item's attributemode.
+    usage: /rpgitem attributemode {item} <value>
+  togglepowerlore:
+    usage: /rpgitem togglepowerlore {item}
+    description: Toggle power lore display for item.
+  giveperms:
+    description: Toggles give requiring permissions
+    usage: /rpgitem giveperms
+  backupitem:
+    description: Backup a RPGItem
+    usage: /rpgitem backupitem {item}
+  delete:
+    usage: /rpgitem template delete {item}
+    description: Delete specific template
+  trigger:
+    description: Set trigger for an item.
+    usage: /rpgitem trigger [option] {item} <properties>
+  save-all:
+    usage: /rpgitem save-all
+    description: Save all items.
+  additemflag:
+    usage: /rpgitem additemflag {item} <itemflag>
+    description: Add item flag.
+  enchantment:
+    usage: /rpgitem enchantment {item} [clone|clear|add|remove]
+    description: List/clone/clear/add or remove enchantments in hand to item.
+  item:
+    description: |-
+      Set ITEM material to item or with additional options.
+      Available options:
+        [item id] - Set to an item as material.
+        [item id] hex [string] - Set to item material with specified color.
+        [item id] [damage value] - Set to item material with specified damage value.
+    usage: /rpgitem item {item} [options|value]
+  customitemmodel:
+    description: Toggle custom item model support for item.
+    usage: /rpgitem customitemmodel {item}
+  no_description: No description for this yet.
+  version:
+    usage: /rpgitem version
+    description: Display version infomation of RPGItem.
+  placeholder:
+    description: Set power placeholder for template. Set power properties will not
+      change when applying template
+    usage: /rpgitem template placeholder <option> {item} <powerId:property>
+  help:
+    usage: /rpgitem help
+    description: Display RPGItems plugin's usage.
+  import:
+    description: Import item from Gist.
+    usage: /rpgitem import [link] [name|optional]
+  no_usage: No usage information for this yet.
+  cost:
+    usage: /rpgitem cost {item} <option>
+    description: |-
+      Show/set durability cost.
+      Available options:
+        breaking | breaking [value|integer] - Show/set durability cost when breaking block using this item.
+        hit | hit [value|integer] - Show/set durability cost when being hit with this item equipped.
+        toggle - Whether durability cost when being hit should based on damage.
+        hitting | hitting [value|integer] - Show/set durability cost when hit other entities with this item.
+      Note: values can be negative, thus hit/hitting/breaking will increase item durability.
+  reloaditem:
+    description: Reload a specific item.
+    usage: /rpgitem reloaditem {item}
+  prop:
+    description: Display/change Item's power/conditon/marker/modifier.
+    usage: /rpgitem <power|condition|marker|modifier> prop {item} [optionalProperties]
+  reload:
+    usage: /rpgitem reload
+    description: Reload the plugin.
+  worldguard:
+    usage: /rpgitem worldguard
+    description: Toggles worldguard support.
+  armorExpression:
+    usage: /rpgitem armorExpression {item} <expression>
+    description: Set an item's armor expression.
+  author:
+    usage: /rpgitem author {item}
+    description: Display the author of item.
+  gen-wiki:
+    description: Generate wiki files in plugin's directory.
+    usage: /rpgitem gen-wiki
+  damagemode:
+    usage: /rpgitem damagemode {item} [damagemode]
+    description: Display/set damagemode of item
+  wgignore:
+    description: Whether item ignore WorldGruad PvP protect.
+    usage: /rpgitem wgignore {item}
+  display:
+    usage: /rpgitem display {item} <value>
+    description: Set item name to value
+  removepower:
+    description: Remove the power from item. If the item have multiple specified power,
+      the first match (pit fall) will be removed.
+    usage: /rpgitem removepower {item} <power>
+  wgcustomflag:
+    description: Toggles worldguard custom flag support.
+    usage: /rpgitem wgcustomflag
+  addtogroup:
+    description: Add an item to a item group
+    usage: /rpgitem addtogroup {group} {item}
+  listgroup:
+    usage: /rpgitem listgroup {group}
+    description: List items in a group
+  enchantmode:
+    usage: /rpgitem enchantmode {item} <value>
+    description: Set item's enchantmode.
+  list:
+    description: List RPGItems.
+    usage: /rpgitem list [page]
+  dump:
+    description: Dump an item.
+    usage: /rpgitem dump {item}
+  add:
+    usage: /rpgitem <power|condition|marker|modifier> add {item} <properties>
+    description: Add power/condition/marker/modifier to an item
+  debug:
+    usage: /rpgitem debug
+    description: Debug the item in your mainhand.
+  cleanbackup:
+    description: Clean all RPGItems' backup
+    usage: /rpgitem cleanbackup
+  togglearmorlore:
+    usage: /rpgitem togglearmorlore {item}
+    description: Toggle armor lore display for item.
+properties:
+  tntcannon:
+    main_name: TNT Cannon
+    main_description: Fire active tnt
+  projectile:
+    firingR: Polar coordinates parameter
+    yield: Radius affected by this Explosive's explosion
+    firingTheta: Polar coordinates parameter
+    burstCount: Burst count
+    main_name: Projectile
+    castOff: Cast at player when triggering this power, instead of realtime (after
+      delay, etc)
+    speed: Speed of projectiles
+    initialRotation: Initial rotation to calculate in polar coordinates
+    amount: Amount of projectiles
+    isIncendiary: Whether this Explosive's explosion causes fire
+    burstInterval: Interval between bursts
+    setFireballDirection: Whether to set Fireball' direction so it won't curve
+    main_description: Launches projectile
+    isCone: Whether launch projectiles in cone
+    fireballItem: The material fireball show as
+    eggShouldHatch: If the projectile is an egg，whether the egg will hatch
+    firingPhi: Polar coordinates parameter
+    firingLocation: Can be SELF or TARGET
+    applyForce: Apply bow force to projectile speed
+    gravity: Whether the projectile have gravity
+    firingRange: No use yet
+    projectileType: Type of projectiles
+    suppressArrow: Bow will not shoot arrow (still consume it)
+    eggHatchEntity: If the projectile is an egg，what will the egg hatch
+    eggHatchNumber: If the projectile is an egg，how many entities should egg hatch，-1
+      means not to modify the number，the number should be 0~127
+    range: Range will projectiles spread, in degree
+  delayedcommand:
+    cmdInPlace: Execute command in-place
+    delay: Delay before executing command
+    main_description: Run command on click with a delay
+    command: Command to be executed
+    main_name: Delayed Command
+    permission: Permission that will be given to user executing command
+  skyhook:
+    hookingTickCost: Cost per tick hooking
+    hookDistance: Maximum distance
+    main_name: Sky Hook
+    main_description: Hook on to some material
+    railMaterial: Material that can hooks on
+  noimmutabletick:
+    immuneTime: Tick of immunity
+    main_name: No Immutable Tick
+    main_description: Cancel the damage delay (no-damage-tick)
+  scoreboard:
+    scoreOperation: NO_OP, ADD_SCORE, SET_SCORE, RESET_SCORE
+    reverseTagAfterDelay: Reserve target tag to original state after delay
+    tag: Tag(s) to add and remove, `TO_ADD,!TO_REMOVE`
+    objective: Objective name
+    team: Team(s) to join and leave, `JOIN,!LEAVE`
+    main_name: Scoreboard
+    value: Value to operate
+    abortOnSuccess: Abort subsequence execution of powers when success
+    main_description: Add/remove tag/team to/from player's scoreboard
+    delay: Ticks of delay
+  beam:
+    particle: Particle type.
+    burstCount: Burst times.
+    castOff: Use player position when casting this power, not real time (after delay)
+    cone: Fires at a random direction in cone.
+    ticksBeforeHoming: Ticks before homing starts.
+    extraData: Particle parameter (r,g,b,size), input null for empty.
+    main_name: beam
+    firingLocation: Can be SELF or TARGET
+    beamAmount: Beam amount in each burst.
+    effectOnly: Can be MOBS / ENTITY / PLAYER
+    main_description: Fires a beam, controlled by parameters.
+    behaviorParam: Parameters for 'behavior', formatted in JSON.
+    ignoreWall: Wheather a flying beam ignore solid blocks.
+    speedBias: Expression for calculating speed.
+    spawnsPerBlock: Particle spawning times in a block, higher sPB increases particle
+      density.
+    homingAngle: Target locking cone angle.
+    homingTarget: Can be MOBS / ENTITY / PLAYER
+    damage: Damage of beam.
+    homingMode: Target select mode.
+    particleDensity: Density of particles per block, recommended 1-10, higher has
+      better visual effect but consume more network resource and GPU
+    ttl: Times to live (beam ends when either length or ttl reached)
+    bounce: Bounce times when beam hit a block.
+    firingTheta: Polar coordinates parameter
+    gravity: Gravity on beam, blocks/s^2. (disabled when homing starts)
+    homing: Turning radius during homing, 0 for not homing.
+    hitSelfWhenBounced: Will beam hit yourself when it bounces back.
+    offsetX: X offset of particle.(increases hitbox)
+    offsetY: Y offset of particle.(increases hitbox)
+    offsetZ: Z offset of particle.(increases hitbox)
+    speed: Fly speed.
+    initialRotation: Initial rotation when calculating polar coordinates
+    firingPhi: Polar coordinates parameter
+    mode: Spawning mode, Beam or Projectile.
+    suppressMelee: Whether trigger HIT
+    particleSpeed: Particle parameter 'speed'.
+    burstInterval: Interval between bursts.
+    homingRange: Target locing range.
+    firingR: Polar coordinates parameter
+    length: Total length of this beam (beam ends when either length or ttl reached)
+    pierce: Numbers of Mob a beam can pierce throuth.
+    behavior: Behavior of beam.
+    firingRange: No use yet
+  attachments:
+    limit: maximum number of attachments
+    main_name: Attachments
+    allowedItems: RPGItems/Groups' id or name that are leagal attachment for this
+      item
+    allowedSlots: allowed equipment slot
+    allowedInvSlots: allowed inventory slot number. -1 to disable inventory
+    main_description: Can use other RPGItems as attachments. Firing this power will
+      trigger ATTACHMENT trigger of attachments.
+  deflect:
+    main_description: Deflect arrows or fireballs towards player
+    duration: Duration of this power, in ticks
+    deflectCost: Cost for each deflect
+    cooldownpassive: Cooldown time of this power in passive mode
+    facing: Maximum effective view angle in degrees
+    main_name: Deflect
+    chance: Chance in percentage of triggering this power in passive mode
+  particle:
+    playLocation: Play particle at SELF or TARGET
+    dustSize: Size of dust particle
+    main_name: Particle
+    dustColor: Color of dust particle
+    material: Material of dust particle
+    offsetZ: Offset Z
+    offsetY: Offset Y
+    offsetX: Offset X
+    delay: Delay of execution
+    particle: Name of particle effect
+    force: Force show particle
+    extra: Extra data
+    main_description: Spawn some particles around the user
+    effect: Name of visual effect
+    particleCount: Count of particle
+    firingRange: No use yet
+  sound:
+    pitch: Pitch of sound
+    main_name: Sound
+    main_description: Play a sound
+    playLocation: Play sound at Player or Target
+    firingRange: No use yet
+    sound: Sound to be played
+    volume: Volume of sound
+    delay: Ticks to delay before play sound
+  base:
+    isCritical: Whether abort current trigger if this condition fails.
+    powerId: Specific Power ID
+    requiredContext: Context key used by this power.
+    display: Display text of this power.
+    displayText: Display text of this power.
+    id: ID of this condition/selector.
+    cost: Durability cost of the power.
+    displayName: Display name of this power.
+    cooldown: Cooldown of the power, in ticks.
+    triggers: Triggers of this power.
+    powerTags: Power tags
+    markerId: Specific marker ID
+    tags: Tags
+    priority: Priority of this custom trigger.
+    conditions: Conditions of this power.
+    targetPower: Target power of this modifier.
+    isStatic: Whether only check this condition once.
+    requireHurtByEntity: Whether only run this power when hurt by entity.
+    selectors: Selectors for this power.
+    targetProperty: Target property of this modifier.
+    targetItem: Target item of this modifier.
+  hit:
+    main_name: Hit
+    minDamage: Minimum damage to trigger power
+    main_description: Trigger when hit an entity
+    maxDamage: Maximum damage to trigger power
+  airborne:
+    main_description: Do more damage when gliding
+    main_name: Airborne
+    cap: Maximum damage done by this power
+    percentage: Damage increase in percentage when gliding
+    setBaseDamage: Set as base damage to further calculations
+  particlebarrier:
+    projected: Whether this barrier can be projected
+    energyPerLevel: Energy required per level of strength effect
+    effect: Effect of particle barrier
+    main_name: Particle Barrier
+    energyPerBarrier: Total energy gained when a barrier was broken
+    barrierHealth: Health of a new barrier
+    main_description: Spawn a barrier that redirecting energy of incoming attacks
+      to strength
+    energyDecay: Decay of energy per second
+  potiontick:
+    amplifier: Amplifier of potion effect
+    effect: Type of potion effect
+    interval: Interval of this power
+    duration: Time of potion effect, in ticks
+    main_description: Apply effect to player when equipped
+    summingUp: Whether to stack amplifier of the same type of potion effects
+    main_name: Potion Tick
+    clear: Whether to remove the effect instead of adding it
+  lorefilter:
+    main_description: Preserve all lore lines match the regex
+    desc: Display text
+    find: Only requires the regex finds in lore line (instead of matches).
+    main_name: Lore Filter
+    regex: Regex to filter the lore
+  criticalhit:
+    backstabChance: Chance of triggering backstab, in percentage
+    chance: Chance of triggering critical hit, in percentage
+    setBaseDamage: Whether to set event base damage to final damage to allow stacking
+      of damage power.
+    main_description: With a chance%% to deal more damage. With a backstabChance%%
+      to deal more damage when backstabing.
+    factor: Factor of critical hit damage. E.g. deals (damage * factor) damage
+    backstabFactor: Factor of backstab damage. E.g. deals (damage * backstabFactor)
+      damage
+    main_name: Critical Hit and Backstab
+  aoecommand:
+    permission: Permission that will be given to user executing command
+    main_name: AOE Command
+    command: Command to be executed
+    rm: Minimum range in blocks.
+    main_description: Run command for entities in range. PowerSelector is applicable.
+    range: Effective range in blocks.
+    r: Maximum range in blocks.
+    c: Maximum count of entities.
+    type: Type of entities
+    facing: Maximum effective view angle in degrees.
+    selfapplication: Whether to apply command on triggering player.
+    mustsee: Whether only apply to the entities within line of sight
+  orcondition:
+    main_description: Condition that requires at least one of its Conditions are met
+    main_name: Or Condition
+  teleport:
+    distance: Maximum distance
+    main_description: teleport you in the direction you're looking in or to the place
+      where the projectile hit
+    main_name: Teleport
+    targetMode: Mode of finding teleport target
+  knockup:
+    knockUpPower: Power of knock up
+    main_description: Send the hit target flying
+    main_name: Knockup
+    power: Power of knock up
+    chance: Chance of triggering this power, 1/n
+  dummy:
+    checkDurabilityBound: If to check durability bound of this item
+    cooldownKey: Key for cooldowning
+    main_name: Dummy
+    main_description: Won't do anything but give you fine control
+    enchCostPercentage: Cost of durability with enchants, scale with level
+    costByDamage: Consume durability by damage value
+    costByEnchantment: true if the enchantment is meant to do with durability
+    showCDWarning: Show cooldown warning
+    enchantmentType: Specific enchantment to match
+    cooldownResult: Result returned when in cooldown
+    doEnchReduceCost: true if the enchantment is meant to increase durability
+    successResult: Result returned when success
+    globalCooldown: Override other cooldowns on this item
+    costResult: Result returned when failed to comsume durability
+  realdamage:
+    main_description: Do real damage to entity hit but won't kill it
+    main_name: Real Damage
+    minDamage: Minimum damage to trigger
+    realDamage: Damage of this power
+  dying:
+    maxDamage: Maximum damage to trigger power
+    main_description: Trigger when at low health
+    main_name: Dying
+    minDamage: Minimum damage to trigger power
+  attributemodifier:
+    name: Name
+    uuidMost: UUID most
+    slot: Slot
+    amount: Amount
+    operation: Operation
+    attribute: Attribute
+    main_name: Attribute Modifier
+    uuidLeast: UUID least
+    main_description: Add Attribute Modifier
+  attract:
+    attractingEntityTickCost: Durability cost per entity one tick when attracting.
+    main_name: Attract
+    firingRange: No use yet
+    main_description: Pull around mobs in to player
+    maxSpeed: Maximum speed when attracting.
+    attractPlayer: Whether allow attracting player.
+    radius: Effective range in blocks.
+    attractingTickCost: Durability cost per tick when attracting.
+    firingLocation: Define location of AOE center, can be SELF or TARGET
+    duration: Duration of this power when triggered by click in tick.
+  undead:
+    main_name: Undead
+    main_description: Turning player into undead
+  plusmodifier:
+    main_description: TBD. Modify power properties on-the-fly
+    main_name: Plusmodifier
+    value: Value to add
+  rescue:
+    main_description: Rescue player on low health or receiving high damage
+    useBed: Whether use bed instead of home
+    inPlace: Whether rescue in place instead of teleport
+    main_name: Rescue
+    damageTrigger: Damage trigger of rescue
+    healthTrigger: Health trigger of rescue
+  potionself:
+    type: Type of potion effect
+    main_name: Potion Self
+    main_description: Apply effect to player when used
+    amplifier: Amplifier of potion effect
+    duration: Time of potion effect, in ticks
+    summingUp: Whether to stack amplifier of the same type of potion effects
+    clear: Clear this effect instead of applying
+  hurt:
+    minDamage: Minimum damage to trigger power
+    maxDamage: Maximum damage to trigger power
+    main_description: Trigger when hurt (damage applied to player after armor calculation,
+      etc)
+    main_name: Hurt
+  headshot:
+    soundSelf: Whether to play sound at player location
+    particleEnemy: Whether to show particle at enemy location
+    factor: Factor of headshot damage. E.g. deals (damage * factor) damage
+    setBaseDamage: Whether to set event base damage to final damage to allow stacking
+      of damage power.
+    main_name: Headshot
+    main_description: Increase damage when headshot
+    soundEnemy: Whether to play sound at enemy location
+  mount:
+    maxDistance: Maximum distance to ride
+    main_description: Ride an entity
+    maxTicks: Maximum ticks riding
+    main_name: Mount
+  rumble:
+    main_description: Sends a shockwave through the ground and sends any hit entities
+      flying
+    main_name: Rumble
+    power: Power of rumble
+    distance: Maximum distance of rumble
+    damage: Damage dealt of rumble
+  rainbow:
+    main_description: Fire blocks of coloured wool
+    isFire: Whether launch fire instead of wool
+    main_name: Rainbow
+    count: Count of blocks
+  tippedarrow:
+    duration: Duration of potion effect, in ticks
+    type: Type of potion effect
+    amplifier: Amplifier of potion effect
+    main_description: Fire an tipped arrow
+    main_name: Tipped Arrow
+  repair:
+    abortOnFailure: Abort subsequence execution of powers when fail
+    isSneak: Whether require sneaking to trigger this power
+    allowBreak: Allow repairing with negative durability to breaking the item
+    showFailMsg: Whether to show message when not enought material
+    abortOnSuccess: Abort subsequence execution of powers when success
+    main_name: Repair
+    mode: Whether allow repairing when durability would overflow
+    amount: Amount of material required
+    main_description: Repair the item with some material
+    material: Material to be consumed
+    customMessage: Custom message when not enought material
+    durability: Durability to be repaired
+  consume:
+    isRight: Mouse button to trigger the power
+    main_description: Remove one item on click.
+    main_name: Consume
+  evaldamage:
+    display: Display name
+    main_description: Calculate damage dynamicly
+    expression: Expression to compute damage
+    main_name: Eval Damage
+    setBaseDamage: Whether to set event base damage to final damage to allow stacking
+      of damage power.
+  gunfu:
+    forceFactor: Factor to calculate in velocity force
+    initVelFactor: Factor of init velocity
+    main_name: Gun Fu
+    velFactor: Factor of velocity change per tick
+    distance: Maximum distance to lock enemy
+    delay: Delay before projectile homing on target
+    main_description: Make projectiles track enemies
+    maxTicks: Maximum ticks tracking
+    viewAngle: Maximum view angle to lock enemy
+  explosion:
+    power: Power of explosion. 4 for TNT
+    main_name: Explosion
+    explosionPower: Explosion power, creeper do 3 in vanilla hard difficulty
+    main_description: Make a explosion that caused by the player
+    chance: Chance of triggering this power, in percentage
+    distance: Maximum distance
+  particletick:
+    delay: Delay of execution
+    particle: Name of particle effect
+    particleCount: Count of particle
+    playLocation: Play particle at SELF or TARGET
+    dustSize: Size of dust particle
+    firingRange: No use yet
+    interval: Interval of particle effect
+    material: Material of dust particle
+    dustColor: Color of dust particle
+    force: Force show particle
+    effect: Name of visual effect
+    main_description: Spawn some particles around the user when equipped
+    extra: Extra data
+    offsetY: Offset Y
+    offsetZ: Offset Z
+    offsetX: Offset X
+    main_name: Particle Tick
+  aoe:
+    selfapplication: Whether to apply effect on triggering player.
+    amplifier: Amplifier of applied effect.
+    name: Display text of the power.
+    range: Effective range in blocks.
+    count: Number of targets to apply effect
+    angle: View angle to select targets
+    duration: Duration of applied effect, in ticks.
+    type: Type of applied effect.
+    main_description: Apply effect to entities in range. PowerSelector is applicable.
+    target: Type of target, can be player or mob or entity
+    main_name: AOE Effect
+  AOEDamage:
+    main_description: Deal damage to an area
+    main_name: AOE Damage
+  livingentity:
+    main_description: Trigger when target is living entity
+    main_name: Living Entity
+  divmodifier:
+    main_description: TBD. Modify power properties on-the-fly
+    value: Value to divide, cannot be 0
+    main_name: Divmodifier
+  lightning:
+    main_description: Strike the hit target with lightning
+    chance: Chance of triggering this power, 1/n
+    main_name: Lightning
+  aoedamage:
+    main_description: Deal damage to an area of entities
+    incluePlayers: Deal damage to players
+    selfapplication: Deal damage to user self
+    castOff: Use player position when casting this power, not real time position
+    firingLocation: Use player or target as center
+    selectAfterDelay: If delay is set, check for entity to deal damage after the delay,
+      otherwise check when casting the power
+    damage: Actual damage to deal
+    mustsee: Deal damage only to visible entity (not hiding behind a block)
+    suppressMelee: Suppress hit trigger
+    minrange: Minimum range to deal damage, closer entities will not be selected
+    firingRange: No use yet
+    main_name: AOE Damage
+    count: Number of entities to deal damage
+    angle: Visible angle
+    name: AOEDamage
+    range: Radius of area effect
+    delay: Ticks delay before deal damage
+  slotcondition:
+    slots: Target slot to match
+    main_description: Require item to be placed in correct inventory slot
+    critical: true to stop processing further conditions if not met, and return false
+    main_name: Slot condition
+  HIT:
+    main_name: Trigger when hit entity, only mainhand will be triggered
+  sneak:
+    main_name: Sneak
+    main_description: Trigger when start sneak (trigger once)
+  damagetype:
+    main_description: A string to match specific damage type, often used in class
+      build system
+    damageType: String to match, e.g., melee / ranged / magic
+    main_name: Damage Type
+  translocator:
+    main_description: Throw an translocator and teleport to it later
+    tpCost: Cost to teleport to the translocator
+    speed: Throw speed
+    setupCost: Cost to setup an translocator
+    main_name: Translocator
+  cancelbowarrow:
+    cancelArrow: true or false
+    main_name: Cancel bow arrow
+    main_description: Bow will not shoot arrow (will not consume arrow either)
+  evalcondition:
+    main_name: Eval Condition
+    expression: Expression to compute condition
+    main_description: Calculate condition dynamicly
+  pumpkin:
+    chance: Chance of triggering this power, in percentage
+    main_name: Pumpkin
+    drop: Drop chance of the pumpkin, 0.0~1.0
+    main_description: When hit skeleton or zombie, make them wear pumpkin head
+  rangedonly:
+    main_name: Ranged Only
+    main_description: Mark this item as ranged only
+    rm: Minimum radius
+    r: Maximum radius
+  enchantedhit:
+    enchantmentType: Specific enchantment to match
+    setBaseDamage: Set as base damage for further calculations
+    main_name: Enchanted Hit
+    amountPerLevel: Value for level scaling
+    mode: Can be MOBS / ENTITY / PLAYER
+    main_description: Amplify damage with specific enchantment
+  equipmentcondition:
+    rpgitem: RPGItem that player should wears
+    main_name: Equipment Condition
+    material: Material that player should wears
+    itemStack: Item that player should wears
+    main_description: Condition that requires player wear some item
+    matchAllSlot: Whether to require all slot to match
+    requireEmpty: true if you want this slot to be empty
+    slots: Equipment slots
+  color:
+    wool: Throw colorful wools
+    main_name: Color
+    glass: Throw colorful glasses
+    clay: Throw colorful clays
+    main_description: Throw colorful blocks
+  tick_offhand:
+    main_name: Tick offhand
+    main_description: Trigger every tick when item is in offhand
+  offhand_click:
+    main_name: Offhand click
+    main_description: Trigger when click with item in offhand
+  fireball:
+    main_description: Fire an fireball
+    main_name: Fireball
+  tick:
+    main_description: Trigger everytick when item in main hand
+    main_name: Tick
+  charge:
+    main_name: Charge
+    percentage: Damage increase in percentage when sprinting
+    cap: Maximum damage done by this power
+    speedPercentage: Damage increase in percentage when faster than default
+    main_description: Do more damage when sprinting
+    setBaseDamage: Set as base damage for futher calculations
+  mulmodifier:
+    main_description: TBD. Modify power properties on-the-fly
+    main_name: Mulmodifier
+    value: Value to multiply
+  shulkerbullet:
+    range: Range of target finding
+    main_description: Launches shulker bullet when right clicked, target nearest entity
+      in front of player
+    main_name: Shulker Bullect
+  stuck:
+    costAoe: Cost of this power (right click)
+    cost: Cost of this power (hit)
+    range: Range of AOE
+    duration: Duration of this power in tick
+    chance: Chance of triggering this power, 1/n
+    main_description: Make target stuck
+    costPerEntity: Cost of this power (right click per entity)
+    facing: Maximum effective view angle in degrees
+    main_name: Stuck
+  food:
+    foodpoints: Food Points
+    main_description: Restore food points when eaten
+    main_name: Food
+  bow_shoot:
+    main_name: Bow shoot
+    maxForce: Maximum force of the bow to trigger power
+    minForce: Minimum force of the bow to trigger power
+    main_description: Trigger when shooting a bow
+  beam_end:
+    main_description: Trigger when beam ends
+    main_name: Beam end
+  placeholdercondition:
+    main_description: Compare PlaceholderAPI placeholder to strings(can also be a
+      placeholder)
+    value: the value to match
+    operator: ==,!=,===(ignore case ==),!==(ignore case !=),>,>=,<,<=,contain(s),!contain(s),startwith,endwith,match(es),!match(es)
+    placeholder: the placeholder
+  economy:
+    main_name: Economy
+    main_description: Deposit to or withdraw from player
+    abortOnFailure: Abort on failure
+    showFailMessage: Show fail message from economy provider
+    amountToPlayer: Amount of money will transfer to player (can be negative)
+  torch:
+    main_description: Shoots torches to light up an area
+    main_name: Torch
+  fire:
+    burnduration: Duration of the fire, in ticks
+    main_description: Fire an fireblock that burns entities hit
+    main_name: Fire
+    distance: Maximum distance
+  ATTACHMENT:
+    main_name: Trigger as attachment
+  projectile_hit:
+    main_name: Projectile hit
+    main_description: Trigger when projectile hit something
+  consumehit:
+    main_description: Remove one item when hits something.
+    main_name: Consume Hit
+  scoreboardcondition:
+    main_description: Condition that add requirements of player's scoreboard
+    main_name: Scoreboard Condition
+    team: Selecting targets by team(s), `MUST_ON,!MUST_NOT_ON`
+    tag: Selecting targets by tag(s), `MUST_HAVE,!MUST_NOT_HAVE`
+    score: Selecting targets by score(s), `score_name:min,max another_score_name:min,max`
+  swap_to_offhand:
+    main_description: Trigger when swap item to offhand
+    main_name: Swap to offhand
+  sneaking:
+    main_description: Trigger when sneaking
+    main_name: Sneaking
+  swap_to_mainhand:
+    main_name: Swap to mainhand
+    main_description: Trigger when swap item to mainhand
+  commandhit:
+    minDamage: Minimum damage to trigger
+    command: Command to be executed
+    main_name: Command Hit
+    main_description: Run a command when hits someting.
+    permission: Permission that will be given to user executing command
+  flame:
+    main_description: Set the target on fire on hit
+    burntime: Duration of the fire, in ticks
+    main_name: Flame
+  projectile_launch:
+    main_name: Project Launch
+    main_description: Trigger when launching a projectile
+  ice:
+    main_name: Ice
+    main_description: Fire an ice block, then create a box of ice on impact
+  selector:
+    x: X-coordinate of reference position, tilde notation is available. Use player's
+      current position if empty
+    y: Y-coordinate of reference position, tilde notation is available. Use player's
+      current position if empty
+    z: Z-coordinate of reference position, tilde notation is available. Use player's
+      current position if empty
+    r: Selects only targets less than r blocks from reference position
+    score: Selecting targets by score(s), `score_name:min,max another_score_name:min,max`
+    type: Type(s) of target entities
+    main_name: Selector
+    team: Selecting targets by team(s), `MUST_ON,!MUST_NOT_ON`
+    main_description: Provide a selector for some AOE power
+    tag: Selecting targets by tag(s), `MUST_HAVE,!MUST_NOT_HAVE`
+    rm: Selects only targets more than rm blocks from reference position
+    count: Count of target entities
+    id: ID of this power, should be unique on this item
+    dz: Selects only targets less than dx blocks in Z-axis from reference position
+    dy: Selects only targets less than dx blocks in Y-axis from reference position
+    dx: Selects only targets less than dx blocks in X-axis from reference position
+    gameMode: Player game mode
+  evalmodifier:
+    main_name: Evalmodifier
+    expression: Expression to apply
+    main_description: TBD. Modify power properties on-the-fly
+  ranged:
+    r: Maximum radius
+    rm: Minimum radius
+    main_name: Ranged
+    main_description: Mark this item as ranged
+  hit_global:
+    main_name: Hit global
+    minDamage: Minimum damage to trigger power
+    main_description: Trigger everything but item in mainhand, whenever hit an entity
+    maxDamage: Maximum damage to trigger power
+  unbreakable:
+    main_name: Unbreakable
+    main_description: Mark this item as unbreakable
+  place_off_hand:
+    main_description: Trigger when placing block with offhand
+    main_name: Place offhand
+  mending:
+    requireEnchantment: Require mending enchantment to fix item or not
+    main_name: Mending
+    repairFactor: How much durability can get per exp
+    main_description: Fix item when picking up exp
+  lastresultcondition:
+    main_name: Last Result Condition
+    okResults: Allowed result
+    main_description: Requires result of last power is in a set
+    failOnNoResult: Whether fails when no power
+  pickup_off_hand:
+    main_description: Trigger when pickup item to offhand
+    main_name: Pickup offhand
+  left_click:
+    main_description: Trigger when left click
+    main_name: Left click
+  throw:
+    entityData: NBT data of entity
+    main_name: Throw
+    main_description: Spawn and throw a entity
+    isPersistent: Whether to make entity persistent
+    entityName: Name of entity thrown
+    speed: Speed of entity thrown
+  andcondition:
+    main_name: And Condition
+    main_description: Condition that requires all its Conditions are met
+  location:
+    main_description: Trigger with specific location
+    main_name: Location
+  forcefield:
+    main_description: Creates a force field around the player
+    base: Base of force field
+    height: Height of force field
+    ttl: Time to live
+    radius: Radius of force field
+    main_name: Force Field
+  potionhit:
+    duration: Duration of potion effect, in ticks
+    main_name: Potion Hit
+    summingUp: Whether to stack amplifier of the same type of potion effects
+    amplifier: Amplifier of potion effect
+    chance: Chance of triggering this power, 1/n
+    main_description: Apply effect to enemy when hit
+    type: Type of potion effect
+  unique:
+    enabled: Enable this flag
+    main_name: Unique flag
+    main_description: Make this item unstackable (also untradable with vanilla NPC
+      GUI)
+  attachment:
+    main_name: Attachment
+    main_description: Trigger items in inventory as attachment
+  lifesteal:
+    main_description: Restore health by damage dealt
+    main_name: Lifesteal
+    factor: Factor of life steal
+    chance: Chance of triggering this power, in percentage
+  hit_taken:
+    maxDamage: Maximum damage to trigger this power
+    main_description: Trigger when take damage before any further calculation (armor,
+      etc)
+    main_name: Hit taken
+    minDamage: Minimum damage to trigger this power
+  command:
+    main_description: Run a command on click.
+    command: Command to be executed
+    permission: Permission that will be given to user executing command
+    main_name: Command
+  xorcondition:
+    main_name: Xor Condition
+    init: Init value
+    main_description: Condition that xor all its Conditions
+  durabilitycondition:
+    main_name: Durability Condition
+    main_description: Condition that requires item's durability in a range
+    durabilityMin: Durability should great than durabilityMin
+    durabilityMax: Durability should less than durabilityMax
+  deathcommand:
+    main_description: With a 1/chance to kill the target then execute the command
+      for count times
+    chance: Chance of triggering this power, 1/n
+    desc: Description in display text
+    count: Times to run the command
+    command: Command to be executed
+    main_name: Death Command
+  glove:
+    main_description: Catch an entity
+    throwSpeed: Speed throwing entity
+    main_name: Glove
+    maxTicks: Maximum ticks catching
+    maxDistance: Maximum distance to catch
+  chancecondition:
+    main_name: Chance Condition
+    main_description: Condition that met by chance
+    chancePercentage: chance, in percentage
+  right_click:
+    main_name: Right click
+    main_description: Trigger when right click
+  sprint:
+    main_name: Sprint
+    main_description: Trigger when start sprint (trigger once)
+  damageType:
+    main_description: A string condition to match when dealing damage, e.g., melee
+      / ranged / magic
+    main_name: DamageType
+  DYING:
+    main_name: Trigger when almost die
+  HIT_GLOBAL:
+    main_name: Trigger when hit entity, trigger everything (including inventory) except
+      mainhand
+  BOW_SHOOT:
+    main_name: Trigger when bow shoot
+  BEAM_END:
+    main_name: Trigger when beam ends
+  arrow:
+    main_name: Arrow
+    main_description: Fire an arrow.
+power:
+  undead: Turn you into undead
+  food: Restore %d food point(s)
+  shulkerbullet: Launches shulker bullet (%.1f cooldown)
+  glove: Catch an entity (%.1fs cooldown)
+  consume: Consumed on use
+  stuck: '%d%% chance to stuck enemy %d tick (%.1fs cooldown)'
+  airborne: Damage increase by %d%% when gliding
+  rescue:
+    info: You've been rescued.
+    display: Rescues you when below %.1f Hearts (%.1fs cooldown)
+  projectile:
+    display: Launches a `%s` when right clicked (%.1fs cooldown)
+    cone: Launches multiple `%s` when right clicked (%.1fs cooldown)
+    noFireball: Fireball can't be used with cone mechanism.
+  potiontick:
+    display: Gives %s %d while in use
+    clear: Clear %s while in use
+  tippedarrow: Shoots an tipped arrow with effect %s %d for %.1fs (%.1fs cooldown)
+  translocator: Shoot translocator when swapping to offhand, teleport to it when swapping
+    to mainhand, destory it when pickup from offhand
+  pumpkin: 1/%d chance to make enemy put on a pumpkin
+  beam: Fire a beam to attack enemy
+  aoe:
+    display: Applies %s level %d for %d ticks to everything %s within %d blocks. (%.1fs
+      cooldown)
+    selfapplication:
+      including: including yourself
+      excluding: excluding yourself
+  gunfu: Projectiles will track a enemy (%.1fs cooldown)
+  unbreakable: Never breaks
+  particletick: Spawn some particles when held
+  potionself: Grants %s %d for %.1fs
+  torch: Lights up an area with torches (%.1fs cooldown)
+  selector: Powers only applies to some entites
+  lifesteal: 1/%d chance to steal the ennemy life
+  unbreaking: Unbreaking %d
+  mount: Ride an entity (%.1fs cooldown)
+  charge: Damage increase with speed, by %d%% when sprinting
+  mythicskillcast: Cast skill %s in MythicMobs (%.1fs cooldown)
+  knockup: '%d%% chance to send target flying'
+  explosion: '%.1f%% chance to create a explosion of power %.1f'
+  rangedonly: Can only use as a ranged weapon
+  economy:
+    withdraw: Withdraw %s (%.1fs cooldown)
+    deposit: Deposit %s (%.1fs cooldown)
+  mending: Fix item when picking up exp, every exp gain %.1f durability
+  tntcannon: Shoots TNT (%.1fs cooldown)
+  potionhit: '%d%% chance to apply %s %d for %.1f seconds'
+  arrow: Shoots an arrow. (%.1fs cooldown)
+  rainbow: Shoots %d multicoloured wool (%.1fs cooldown)
+  teleport: Teleports %d blocks (%.1fs cooldown)
+  ice: Shoots Ice (%.1fs cooldown)
+  consumehit: Consumed on hit
+  criticalhit:
+    backstab: '%.1f %% chance to deal %.1f backstab'
+    both: '%.1f %% chance to deal %.1f crit hit, %.1f %% chance to deal %.1f backstab'
+    critical: '%.1f %% chance to deal %.1f crit hit'
+  particle: Spawn some particles when used
+  noimmutabletick: Attack won't cause immutable tick on enemy
+  forcefield: Create a forcefield around you, radius %d, height %d, based %d blocks
+    above, lasts for %.1fs
+  rumble: Sends out a shockwave. (%.1fs cooldown)
+  skyhook: Hooks onto a sky rail
+  deathcommand: 1/%d chance to kill the enemy then %s
+  lightning: '%d%% chance to shock on hit'
+  attract: Handheld blackhole!
+  realdamage: Do %.1f real damage to enemy.
+  ranged: Can use as a ranged weapon
+  deflect: Deflect arrows or fireballs
+  fireball: Shoots a fireball (%.1fs cooldown)
+  fire: Shoots fire (%.1fs cooldown)
+  color: Changes the color of Clay, Glass and Wool (%.1fs cooldown)
+  flame: Burns target for %.1f seconds
+  headshot: Deal %.1f damage when headshot
+command:
+  list:
+    power_per_page: Powers per page
+    item_per_page: Items per page
+  template:
+    placeholder:
+      bad_placeholder: Invalid placehold %s
+      itemName: 'Item name: %s'
+      info: 'Power placeholder: %s'
+      remove:
+        success: Removed power placeholder for template %s
+      not_template: '%s is not a valid template'
+      add:
+        success: '%s: added power placeholder %s'
+    not_template: '%s is not a valid template'
+    apply:
+      success: Applied properties to items based on template %s
+    delete:
+      success: Deleted template %s
+    create:
+      success: Created template from item %s
+    bad_placeholder: Bad placeholder %s
+  meta:
+    quality:
+      warn_quality_not_exists: 'Quality not exist: %s'
+internal:
+  error:
+    command_exception: Command went wrong %s
+    bad_int: Invalid integer %s
+    no_more_string: String argument needed
+    no_more_enum: Enum argument needed
+    bad_double: Invalid decimal %s
+    no_more_int: Integer argument needed
+    bad_enum: Invalid enum，only enum with type %s and value %s is acceptable
+  info:
+    usage_prompt: Usage：%s
+item:
+  additionaldamage: Additional %s Damage
+  multiplydamage: Times %s Damage
+  damage: '%s Damage'
+  armour: Armour
